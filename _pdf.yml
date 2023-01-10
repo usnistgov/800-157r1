@@ -1,0 +1,84 @@
+pdf:
+  - basedir: ""
+    filename: SP800-157r1
+    template: _pdftemplate/template.tex
+    workdir: _pdf
+    collection: sp800-157
+    graphics: 
+      - _sp800-157/images/
+      - _pdftemplate/images/
+    sections:
+        - name: cover
+          template: _pdftemplate/sp/cover.tex
+        - name: frontmatter
+          template: _pdftemplate/abstractwrapper.tex
+          parts:
+            - template: _pdftemplate/sp/abstract.tex
+            - content: _sp800-157/note-to-reviewers.md
+            - template: _pdftemplate/sp/patents.tex
+        - name: toc
+          template: _pdftemplate/sp/toc.tex
+        - name: preface
+          template: _pdftemplate/preface.tex
+          parts:
+              - _sp800-157/acknowledgements.md
+        - name: body
+          parts:
+              - _sp800-157/1_introduction.md
+              - _sp800-157/2_lifecycle.md
+              - _sp800-157/3_requirements.md
+          part_template: _pdftemplate/sectionpart.tex
+          template: _pdftemplate/body.tex
+        - name: references
+          parts:
+              - _sp800-157/references.md
+          part_template: _pdftemplate/sectionpart.tex
+          template: _pdftemplate/references.tex
+        - name: appendix
+          parts:
+              - _sp800-157/A_keys.md
+              - _sp800-157/B_model.md
+              - _sp800-157/C_examples.md
+              - content: _sp800-157/D_glossary.md
+                template: _pdftemplate/sp/glossary.tex
+              - content: _sp800-157/E_abbreviations.md
+                template: _pdftemplate/sp/glossary.tex
+              - _sp800-157/F_changelog.md
+          part_template: _pdftemplate/sectionpart.tex
+          template: _pdftemplate/appendix.tex
+    doi_url: https://doi.org/10.6028/NIST.SP.800-157r1.ipd
+    issued_date: January 2023
+    pubseries: Special Publication
+    long_doc_number: NIST SP 800-157r1 ipd
+    doc_short_title: SP 800-157r1 ipd
+    page_doc_number: NIST SP 800-157r1 ipd
+    page_title: Derived PIV Credentials (Initial Public Draft)
+    display_title:  "NIST SP 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials"
+    title: "Guidelines for Derived Personal Identity Verification (PIV) Credentials"
+    language: 'en-US'
+    lineno: true
+    category: Information Security
+    subcategory: Identity
+    public_comment: January 10, 2023 - March 24, 2023
+    comment_email: piv_comments@nist.gov
+    contact: piv_comments@nist.gov
+    draft: true
+    draft_stage: Initial Public Draft
+    citation: "Ferraiolo H, Regenscheid A, Fenton JL (2023) Guidelines for Derived Personal Identity Verification (PIV) Credentials. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-157r1 ipd."
+    approved: Approved by the NIST Editorial Review Board on YYYY-MM-DD [will be added upon final publication]
+    organizations:
+      - key: csd
+        div: Computer Security Division
+        ou: Information Technology Laboratory
+      - key: altmode
+        org: Altmode Networks
+    authors:
+      - name: Hildegard Ferraiolo
+        orcid: 0000-0002-7719-5999
+        org: csd
+      - name: Andrew Regenscheid
+        orcid: 0000-0002-3930-527X
+        org: csd
+      - name: James L. Fenton
+        orcid: 0000-0002-2344-4291
+        org: altmode
