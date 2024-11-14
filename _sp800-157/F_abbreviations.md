@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Acronyms and Abbreviations
-navOrder: 9
+navOrder: 10
 navTitle: Abbreviations
 permalink: /abbreviations/
-anchor: s-e
-section: E
+anchor: s-f
+section: F
 ---
 
-# Acronyms and Abbreviations {#s-e}
+# Acronyms and Abbreviations {#s-f}
 
 *This appendix is informative.*
 
@@ -28,9 +28,6 @@ CA
 
 CHUID
 : Cardholder Unique Identifier
-
-CSP
-: Cetificate Service Provider
 
 ICC
 : Integrated Circuit Card
