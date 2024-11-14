@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="canonical" href="/800-157r1/sp800-157.html">
+
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=mml&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script> -->
+    <!-- DAP Analytics -->
+    <script type="text/javascript" id="_fed_an_ua_tag"
+            src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript"></script>
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+	<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/800-157r1/static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTStyle.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTPages.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <title>SP 800-157r1 Derived PIV Credentials</title>
+    <meta property="og:title" content="SP 800-157r1 Derived PIV Credentials"/>
+    
+
+    
+    <meta name="description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials">
+    <meta property="og:description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials"/>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-left" role="navigation">
+	<ul class="nav navbar-nav">
+      <li id="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onFocus="loadSearch()">
+        <ul id="results-container"></ul>
+      </li>
+      
+        
+        
+        
+        <li class="">
+          
+              <a href="/800-157r1/">Home</a>
+          
+          
+          
+          
+          
+        </li>
+      
+        
+        
+        
+        <li class="active">
+          
+              <a href="/800-157r1/sp800-157.html">SP 800-157r1</a>
+          
+          
+          
+        
+            
+            
+            
+            <ul class="subnav">
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#abstract">Abstract</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-1"><span class="section">1</span>Introduction</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-2"><span class="section">2</span>Lifecycle</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-3"><span class="section">3</span>Requirements</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#references">References</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-a"><span class="section">A</span>Keys</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-b"><span class="section">B</span>Model</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-c"><span class="section">C</span>Examples</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-d"><span class="section">D</span>Physical Access</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-e"><span class="section">E</span>Glossary</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-f"><span class="section">F</span>Abbreviations</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/sp800-157.html#s-g"><span class="section">G</span>Change Log</a></li>
+                
+              
+              
+
+            
+          
+            </ul>
+          
+          
+          
+        </li>
+      
+      
+      
+  </ul>
+
+</nav>
+
+
+<div class="page-switch">
+
+View this document as: <b>a single page</b> | <a href="/800-157r1/introduction/">multiple pages</a>.
+
+</div>
+
+<div class="container">
+  <div class="row">
+
+
+
+
+
+
+<h1 id="abstract">
+  
+  
+    ABSTRACT <a href="#abstract" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p>This recommendation provides technical guidelines for the implementation of standards-based, secure, reliable credentials that are issued by federal departments and agencies to individuals who possess and prove control of their valid PIV Card. These credentials can be either public key infrastructure (PKI)-based like the PIV Card or non PKI-based but verified by the individual’s home agency. The scope of this document includes requirements for the initial issuance and maintenance of these credentials, certificate policies as applicable, cryptographic specifications, technical specifications for permitted authenticator types, and the command interfaces for removable implementations of such PKI-based credentials.</p>
+<h1 id="keywords">
+  
+  
+    Keywords <a href="#keywords" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p>authentication; credentials; derived PIV credentials; electronic authentication; electronic credentials; mobile devices; personal identity verification; PIV</p>
+
+<h1 id="s-1" data-section="1">
+  
+  
+    Introduction <a href="#s-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This section is informative.</em></p>
+
+<p><a href="/800-157r1/references/#ref-FIPS201">[FIPS 201]</a> specifies a common set of identity credentials to satisfy the requirements of <a href="/800-157r1/references/#ref-HSPD-12">[HSPD-12]</a> in a smart card form factor known as the Personal Identity Verification (PIV) Card. This publication is a companion document to FIPS 201 that specifies the use of additional common identity credentials, known as derived PIV credentials, issued by a federal department or agency and may be used when using a PIV Card is impractical. Consistent with the goals of HSPD-12, derived PIV credentials are designed to serve as a Federal Government-wide standard for a secure and reliable identity credential that supports interoperability across agencies.</p>
+<h2 id="s-1-1" data-section="1">
+  
+  
+    Background <a href="#s-1-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>FIPS 201 originally required that the PIV credential and associated keys be stored in a PIV Card. While
+using the PIV Card for electronic authentication works well with many traditional desktop and laptop
+computers, it needs to be better suited to other devices, such as mobile devices. In response to the growing use of mobile endpoints within
+the Federal Government, FIPS 201-2 permitted the issuance of additional PKI-based credentials, referred to as
+derived PIV credentials, for which the corresponding private key is stored in a cryptographic module within
+a mobile device, such as a smartphone. PKI-based derived PIV credentials use the Federal Public Key Infrastructure (FPKI) to securely establish the binding between the credential and the PIV identity account. PKI-based derived PIV credentials are typically integrated into user endpoints, such as mobile devices, although they are not limited to use in these devices.</p>
+
+<p>To provide additional flexibility for federal departments and agencies, FIPS 201-3 expands the set of credentials beyond those that are PKI-based and broadens their use to other types of devices in addition to mobile devices. This document — NIST Special Publication (SP) 800-157r1 (Revision 1) — describes the expanded set of derived PIV credentials in a variety of form factors. Non-PKI-based derived PIV credentials are cryptographic authenticators (as defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>) that are phishing-resistant. They may be separate from the endpoint being authenticated and, if so, are connected to the endpoint for that purpose. Since there is no PKI infrastructure to validate and supply attributes for non-PKI-based derived PIV credentials, non-PKI-based derived PIV credentials are always used to authenticate to the home agency IdMS of the PIV cardholder from which the cardholder’s PIV identity account is accessed. When access to the PIV identity account is needed outside of the cardholder’s home agency — particularly when a non-PKI-based derived PIV credential is presented in authentication — federation allows for connection across security domains as detailed in <a href="/800-157r1/references/#ref-SP-800-217">[SP800-217]</a>. In the case of non-PKI derived PIV credentials, attributes are obtained from the PIV identity account rather than from the derived PIV credential itself.</p>
+
+<blockquote>
+  <p>Note: The PIV identity account is frequently implemented as multiple linked database records with potentially different access restrictions within the enterprise IDMS, which is the central repository for the cardholder’s digital identities. References to the PIV identity account apply to the relevant linked record, the structure of which is determined by the issuing agency.</p>
+</blockquote>
+
+<p>Derived PIV credentials leverage the current investment in the PIV infrastructure for electronic authentication and build upon the solid foundation of the well-vetted and trusted identity of the PIV cardholder as represented in the PIV identity account, achieving substantial cost savings by leveraging the identity proofing results that were already performed to issue PIV Cards. This document provides technical guidelines for the implementation of derived PIV credentials.</p>
+<h2 id="s-1-2" data-section="1">
+  
+  
+    Purpose and Scope <a href="#s-1-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>This document provides guidelines for cases in which PIV Cards are deemed impractical for authentication and specifies the use of authenticators with alternative form factors to the PIV Card that may be inserted into endpoints (e.g., USB authenticators, authenticators that are connected wirelessly to endpoints, and authenticators that are embedded in endpoints). Authenticators used as derived PIV credentials must meet the requirements for cryptographic authenticators and must be phishing-resistant. Examples of suitable authentication processes include client-authenticated TLS and WebAuthn <a href="/800-157r1/references/#ref-WebAuthn">[WebAuthn]</a>. Using alternative form factors greatly improves the usability of electronic authentication to remote IT resources while simultaneously maintaining the goals of HSPD-12 for common identification that is secure, reliable, and has government-wide interoperability.</p>
+
+<p>The purpose of the derived PIV credential is to provide PIV-enabled authentication services on alternative endpoints to authenticate the credential holder to remote systems. As described in <a href="/800-157r1/pacs/#s-d">Appendix D</a>, derived PIV credentials can also be used for physical access.</p>
+
+<p>To achieve interoperability with the PIV infrastructure and its applications, two approaches to derived PIV credentials have been selected:</p>
+
+<ol>
+  <li>
+    <p>Use of public key infrastructure (PKI) technology. PKI-based derived PIV credentials rely on the same infrastructure used for authentication with a PIV Card. Cross-domain use of PKI-based derived PIV credentials is supported in the same manner as for PIV Cards.</p>
+  </li>
+  <li>
+    <p>Use of non-PKI-based authenticators. Non-PKI authenticators rely on IdAM infrastructure to allow for direct authentication by the home agency. Cross-domain use of non-PKI-based derived PIV credentials is supported through federation protocols, as specified in <a href="https://github.com/usnistgov/800-157r1-dev/pull/references.md#ref-SP-800-217">[SP800-217]</a>.</p>
+  </li>
+</ol>
+
+<p>The derived PIV credentials specified in this document are issued at authentication assurance level (AAL) 2 or 3. Derived PIV credentials are issued at identity assurance level (IAL) 3, which is the identity proofing and issuance level associated with the PIV Card and bound to the PIV identity account, as per <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a>.</p>
+
+<p>Derived PIV credentials are based on the general concept of post-enrollment authenticator binding in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>, which leverages identity proofing and vetting associated with an existing subscriber account using current and valid authenticators to bind additional authenticators to that account. Identity proofing and vetting processes do not have to be repeated to issue a derived PIV credential. Instead, the user proves possession and control of a valid PIV Card to bind a derived PIV credential to their PIV identity account. The PIV Card may be used as the basis for issuing other types of derived credentials, but those credentials would not be bound to the PIV identity account and are therefore outside of this document’s scope.</p>
+
+<p>While non-PKI derived PIV credentials are different in nature from PIV Cards and PKI-based derived PIV credentials, they are nevertheless considered to be derived PIV credentials due to their binding to the cardholder’s PIV identity account. Other authenticator requirements such as strength (AAL) and phishing resistance are additionally required for suitability as derived PIV credentials.</p>
+
+<p>Derived PIV credentials are:</p>
+
+<ul>
+  <li>Issued based on possession and control of the PIV Card,</li>
+  <li>Represented in the PIV identity account at the home agency IdMS, and</li>
+  <li>Issued in accordance with this document.</li>
+</ul>
+
+<p>This document provides technical guidelines on:</p>
+
+<ul>
+  <li>The primary life cycle activities for the derived PIV credential (i.e., initial issuance, maintenance, and termination) and the requirements for each activity to ensure security and</li>
+  <li>The derived PIV credential, including cryptographic specifications, permitted implementation types, mechanisms for activation, use of the credential, and certificate policies, if applicable.</li>
+</ul>
+
+<p>This publication includes an informative appendix that provides recommendations for including digital signature and key management keys on devices that host a derived PIV credential. It also includes an annex with guidelines for the issuance and use of derived PIV credentials for facility access.</p>
+<h2 id="s-1-3" data-section="1">
+  
+  
+    Audience <a href="#s-1-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>This document is intended for stakeholders who are responsible for procuring, designing, implementing, and managing deployments of derived PIV credentials for mobile devices and other endpoints.</p>
+<h2 id="s-1-4" data-section="1">
+  
+  
+    Requirements Notation and Conventions <a href="#s-1-4" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>This standard uses the following typographical conventions in text:</p>
+
+<ul>
+  <li>Specific terms in <strong>CAPITALS</strong> represent normative requirements. When these same terms are not in <strong>CAPITALS</strong>, the term does not represent a normative requirement.
+    <ul>
+      <li>The terms “<strong>SHALL</strong>” and “<strong>SHALL NOT</strong>” indicate requirements to be strictly followed to conform to the publication and from which no deviation is permitted.</li>
+      <li>The terms “<strong>SHOULD</strong>” and “<strong>SHOULD NOT</strong>” indicate that among several possibilities, one is recommended as particularly suitable without mentioning or excluding others, that a certain course of action is preferred but not necessarily required, or that (in the negative form) a certain possibility or course of action is discouraged but not prohibited.</li>
+      <li>The terms “<strong>MAY</strong>” and “<strong>NEED NOT</strong>” indicate a course of action permissible within the limits of the publication.</li>
+      <li>The terms “<strong>CAN</strong>” and “<strong>CANNOT</strong>” indicate a possibility and capability — whether material, physical, or causal — or, in the negative, the absence of that possibility or capability.</li>
+    </ul>
+  </li>
+</ul>
+<h2 id="s-1-5" data-section="1">
+  
+  
+    Document Structure <a href="#s-1-5" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>This document is organized as follows. Each section is labeled as either normative (i.e., mandatory for compliance) or informative (i.e., not mandatory).</p>
+
+<ul>
+  <li>Section 2 describes derived PIV credential life cycle activities and related requirements. This section is <em>normative</em>.</li>
+  <li>Section 3 describes the technical requirements for implementing derived PIV credentials. This section is <em>normative</em>.</li>
+  <li>Appendix A contains guidance on digital signature and key management keys. This appendix is <em>informative</em>.</li>
+  <li>Appendix B provides detailed interface requirements for PKI-based removable (non-embedded) and PKI-based wireless implementations for logical access. This appendix is <em>normative</em> for implementing PKI-based derived PIV credentials on removable (non-embedded) or wireless cryptographic authenticators.</li>
+  <li>Appendix C provides examples of issuance processes for derived PIV credentials. This appendix is <em>informative</em>.</li>
+  <li>Appendix D provides detailed requirements for using derived PIV credentials in physical access control systems (PACS). This appendix is <em>normative</em> for derived PIV credentials used for physical access.</li>
+  <li>Appendix E contains a glossary of selected terms used in this document. This appendix is <em>informative</em>.</li>
+  <li>Appendix F defines acronyms and other abbreviations used in this document. This appendix is <em>informative</em>.</li>
+  <li>Appendix G lists changes made to this document since its initial release. This appendix is <em>informative</em>.</li>
+</ul>
+<h2 id="s-1-6" data-section="1">
+  
+  
+    Key Terminology <a href="#s-1-6" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>Certain key PIV terms have assigned meanings within the context of this document. The term <em>PIV cardholder</em> refers to a person who possesses a valid PIV Card, regardless of whether they have been issued a derived PIV credential. The term <em>applicant</em> refers to a PIV cardholder who has applied for but has yet to be issued a derived PIV credential, and the term <em>subscriber</em> refers to a PIV cardholder to whom a derived PIV credential has been issued.</p>
+
+<h1 id="s-2" data-section="2">
+  
+  
+    Life Cycle Activities and Related Requirements <a href="#s-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This section is normative.</em></p>
+
+<p>The life cycle activities for a derived PIV credential are initial issuance, maintenance, and termination. At a more detailed level, the life cycle activities for PKI-based and non-PKI-based derived PIV credentials differ considerably. This section describes these life cycle activities and provides requirements and recommendations as appropriate.</p>
+
+<p>Issuers of derived PIV credentials <strong>SHALL</strong> document the process for each life cycle activity described below. In accordance with <a href="/800-157r1/references/#ref-HSPD-12">[HSPD-12]</a>, the reliability of the derived PIV credential issuer <strong>SHALL</strong> be established through an official accreditation process, as described in <a href="referenced.md#ref-SP-800-79">[SP800-79]</a>.</p>
+<h2 id="s-2-1" data-section="2">
+  
+  
+    Derived PIV Credential Life Cycle Activities <a href="#s-2-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>The derived PIV credential life cycle consists of the activities described above: initial issuance, maintenance, and termination. The activities at the manufacturer during fabrication and pre-personalization of the authenticator (as applicable) are not considered part of this life cycle model. <a href="/800-157r1/lifecycle/#fig-1">Figure 1</a> presents the PKI-based derived PIV credential life cycle activities alongside the PIV Card life cycle activities. <a href="/800-157r1/lifecycle/#fig-2">Figure 2</a> presents the corresponding life cycle activities for non-PKI-based derived PIV credentials.</p>
+
+<p latex-ignore="true"><a href="/800-157r1/lifecycle/#fig-1" name="fig-1">Figure 1. PKI-based derived PIV credential life cycle activities</a></p>
+
+<p><img src="/800-157r1/sp800-157/images/Fig2-1.png" alt="Flowchart of lifecycle activities associated with PKI-based derived PIV credentials" title="PKI-based derived PIV credential life cycle activities" latex-src="Fig2-1.pdf" latex-fig="1" latex-place="p" /></p>
+
+<p latex-ignore="true"><a href="/800-157r1/lifecycle/#fig-2" name="fig-2">Figure 2. Non-PKI-based derived PIV credential life cycle activities</a></p>
+
+<p><img src="/800-157r1/sp800-157/images/Fig2-2.png" alt="Flowchart of lifecycle activities associated with non-PKI-based derived PIV credentials" title="Non-PKI-based derived PIV credential life cycle activities" latex-src="Fig2-2.pdf" latex-fig="2" latex-place="p" /></p>
+
+<p>The life cycle of a derived PIV credential begins with issuance on an approved device or authenticator associated with the applicant. This may be part of issuing a PIV Card or a subsequent process. Mobile devices with derived PIV credentials are managed, as described in <a href="/800-157r1/references/#ref-SP-800-124">[SP800-124]</a>.</p>
+
+<p>The maintenance activities for a PKI-based derived PIV credential are the same as for other X.509 public key certificates. Certificate re-key is typically used to replace a certificate that is nearing expiration. Certificate modification replaces a certificate if information about the subscriber that appears on the certificate (e.g., their name) needs to be changed.</p>
+
+<p>While non-PKI-based derived PIV credentials are not typically re-keyed and do not contain PII about the subscriber, they may require maintenance, such as replacing the activation secret or biometric factor used to activate the physical authenticator.  Instead of re-keying, the current non-PKI-based derived PIV credential <strong>SHALL</strong> be invalidated and the initial issuance process (except for the device or authenticator approval process) repeated to bind a new derived PIV credential. When a non-PKI-based derived PIV credential is lost, stolen, or damaged, the issuer <strong>SHALL</strong> invalidate the credential to prevent its further use.</p>
+
+<p>When an authenticator with the private key that corresponds to a PKI-based derived PIV credential is lost, stolen, or damaged, the issuer <strong>SHALL</strong> prevent further use of the affected credential by either collecting and destroying the associated private key or revoking the associated certificate. These processes are described in <a href="/800-157r1/lifecycle/#s-2-4">Sec. 2.4</a>. If the subscriber becomes ineligible to possess a PIV Card, all derived PIV credentials for that subscriber are revoked or otherwise invalidated.</p>
+<h2 id="s-2-2" data-section="2">
+  
+  
+    Initial Issuance <a href="#s-2-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>Issuing a derived PIV credential is an instance of the post-enrollment binding of an authenticator described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>. Issuance <strong>SHALL</strong> be performed in accordance with the requirements that apply to cryptographic authenticators and the requirements in this section. The term <em>issuance</em> is used when the device or authenticator is provided to the subscriber and when the device or authenticator is already in the subscriber’s possession. <a href="/800-157r1/examples/#s-c">Appendix C</a> provides sample issuance processes for derived PIV credentials.</p>
+
+<p>Derived PIV credentials <strong>SHALL</strong> only be issued by the home agency of the associated PIV identity account or by a third-party organization or service provider (e.g., USAccess) authorized by the home agency. Derived PIV credentials <strong>SHALL</strong> only be issued to devices (e.g., mobile devices) or authenticators that are approved by the home agency. Agencies <strong>MAY</strong> establish blanket approvals for particular device types or <strong>MAY</strong> individually authorize specific devices or authenticators for issuance and use by a cardholder. Each issuer <strong>SHALL</strong> document its authorization policies for issuance.</p>
+
+<p>Binding a derived PIV credential to a PIV identity account can be accomplished through a connection to a PIV-authenticated endpoint, a direct connection to the PIV Card, or the use of the external authenticator binding procedure described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 4.1.2.2. Derived PIV credentials <strong>MAY</strong> be issued remotely or in person. Except for derived PIV credential issuance as described in <a href="/800-157r1/lifecycle/#s-2-2-3">Sec. 2.2.3</a>, the binding <strong>SHALL</strong> require the cardholder to authenticate using their PIV Card with the PIV-AUTH authentication mechanism specified in <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a> Sec. 6.2.3.1. In addition to authenticating the cardholder, performing the PKI-AUTH authentication mechanism verifies that the applicant is currently eligible to possess a PIV Card. All derived PIV credentials <strong>SHALL</strong> be issued in accordance with <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 6.1.2.1.</p>
+
+<p>Issuing agencies <strong>SHALL</strong> have a documented policy or process for determining the capabilities and basis for trust of the credentials they issue and the devices on which they will reside. All AAL3 derived PIV credentials <strong>SHALL</strong> only be issued  to devices that the home agency has determined to have been issued to the cardholder.</p>
+
+<p>After the applicant has been authenticated, a derived PIV credential <strong>MAY</strong> be issued. The newly issued derived PIV credential <strong>SHALL</strong> be represented in the cardholder’s PIV identity account. This implies that a third-party organization or service provider issuing derived PIV credentials needs to have access to the PIV identity account to meet this requirement.</p>
+
+<p>When a new derived PIV credential is associated with a PIV identity account, the issuer <strong>SHALL</strong> promptly notify the PIV cardholder. Notification <strong>SHALL</strong> be to an address associated with the cardholder’s PIV identity account. More than one independent notification method <strong>MAY</strong> be used to ensure prompt receipt by the cardholder. Examples of these processes are given in <a href="/800-157r1/examples/#s-c">Appendix C</a>.</p>
+
+<p>Derived PIV credentials <strong>SHALL</strong> meet the requirements for authentication assurance level (AAL) 2 or 3 specified in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>. Derived PIV credentials that meet AAL3 requirements also fulfill the requirements of AAL2 and can be used in circumstances that require authentication at AAL2. All derived PIV credentials at both AAL2 and AAL3 <strong>SHALL</strong> meet the requirements for phishing resistance defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.5.</p>
+
+<p>This guideline does not preclude issuing multiple derived PIV credentials to the same applicant based on the same PIV Card. However, this could increase the risk that one of the derived PIV credentials will be lost/stolen without the loss being reported or that the subscriber will inappropriately provide one to someone else. Accordingly, issuers <strong>MAY</strong> limit the number of active derived PIV credentials that a subscriber may have.</p>
+<h3 id="s-2-2-1" data-section="2">
+  
+  
+    PKI-Based Derived PIV Credential Issuance <a href="#s-2-2-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Issuing a PKI-based derived PIV credential requires the generation of a public/private key pair followed by the creation of a corresponding authentication certificate by the certificate authority (CA). For a derived PIV credential capable of being used at AAL3, all of the following requirements apply:</p>
+
+<ul>
+  <li>The cardholder <strong>SHALL</strong> be authenticated using the PIV-AUTH authentication mechanism specified in <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a>.</li>
+  <li>The key pair <strong>SHALL</strong> be generated in the device (authenticator or endpoint) that will house the derived PIV credential.</li>
+  <li>The device <strong>SHALL</strong> send the certificate signing request containing the public key to the CA, which <strong>SHALL</strong> return an X.509 authentication certificate that <strong>SHALL</strong> be stored on the device (authenticator or endpoint).</li>
+  <li>The CA <strong>SHALL</strong> retain a copy of the issued certificate for use should revocation be required.</li>
+</ul>
+
+<p>For a derived PIV credential issued for use only at AAL2, the same procedure <strong>MAY</strong> be used, or the CA <strong>SHALL</strong> generate a key pair and corresponding certificate and send the certificate and private key to the device over an authenticated protected channel for installation. Following installation, the CA <strong>SHALL</strong> promptly and securely delete its copy of the private key.</p>
+
+<p>The private key <strong>SHALL</strong> be stored on the device in a manner that makes it accessible only upon entry of the correct activation secret or presentation of a biometric factor that matches a stored biometric image or template. This <strong>SHALL</strong> be accomplished by using strong access controls for the stored private key or through decryption of the private key using an encryption key derived from the activation secret.</p>
+<h3 id="s-2-2-2" data-section="2">
+  
+  
+    Non-PKI-Based Derived PIV Credential Issuance <a href="#s-2-2-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The applicant <strong>SHALL</strong> be provided with or supply an approved physical authenticator for the highest AAL that the derived PIV credential will be used to authenticate. If the issuer does not directly provide the authenticator, the issuer <strong>SHALL</strong> verify that the authenticator’s characteristics (e.g., single-factor or multi-factor) meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> for the highest authentication assurance level at which it will be used (AAL2 or AAL3), including <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> requirements.</p>
+
+<p>The issuance process for a multi-factor authenticator <strong>SHALL</strong> prompt the applicant to establish an activation secret or a biometric activation factor (or both) for the authenticator if not previously established and successfully authenticate using that authenticator. The issuance process with a single-factor authenticator <strong>SHALL</strong> prompt the applicant to register a password that meets the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.1 and will be verified along with the physical authenticator in the authentication process.</p>
+<h3 id="s-2-2-3" data-section="2">
+  
+  
+    Derived PIV Issuance Without PIV Card <a href="#s-2-2-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Some operational situations may motivate the issuance of a derived PIV credential when a PIV Card is unavailable. For example, it may be desirable to:</p>
+
+<ul>
+  <li>Issue a derived PIV credential to a new subscriber in a field location where production facilities for PIV Cards are unavailable</li>
+  <li>Issue a derived PIV credential to a cardholder who has forgotten to bring their PIV Card to work</li>
+</ul>
+
+<p>In these and similar situations, one or more derived PIV credentials <strong>MAY</strong> be issued, subject to the following conditions.</p>
+
+<p>The subscriber <strong>SHALL</strong> be issued a derived PIV credential only after all issuance requirements in <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a> Sec. 2.8 and 2.8.3 have been met (substituting “derived PIV credential” for “PIV Card” in those sections) and the PIV identity account has been established. Issuance <strong>SHALL</strong> be performed in person or at a supervised remote identity proofing station.</p>
+
+<p>Since only PIV Cards (and not derived PIV credentials) can be used to bind additional derived PIV credentials, all derived PIV credentials expected to be needed <strong>SHOULD</strong> be issued at the same time. For example, the subscriber may need a mobile device and also a separate hardware token as derived PIV credentials.</p>
+
+<p>Derived PIV credentials issued in this manner <strong>MAY</strong> also be enabled for physical access, as described in <a href="/800-157r1/pacs/#s-d">Appendix D</a>.</p>
+<h2 id="s-2-3" data-section="2">
+  
+  
+    Maintenance <a href="#s-2-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>The maintenance activities required for derived PIV credentials depend on the type of derived PIV credential (PKI-based or non-PKI-based) used. Maintenance activities include rekeying, modifying certificates, and replacing an activation factor (biometric or activation secret) as appropriate.</p>
+
+<p>Derived PIV credentials are unaffected when the subscriber replaces their PIV Card with a new one (reissuance) or when it is lost, stolen, or damaged. The ability for the subscriber to use a derived PIV credential is beneficial while waiting for a new PIV Card to be issued. In such circumstances, the subscriber continues to be able to use the derived PIV credential to gain logical access to remote federally controlled information systems from their endpoint.</p>
+
+<p>Updating the activation factor (biometric or activation secret, such as a PIN) or resetting the activation retry count for a derived PIV credential <strong>SHALL</strong> be performed in accordance with <a href="/800-157r1/requirements/#s-3-1-4">Sec. 3.1.4</a> for PKI-based derived PIV credentials or <a href="/800-157r1/requirements/#s-3-2-3">Sec. 3.2.3</a> for non-PKI-based derived PIV credentials.</p>
+<h3 id="s-2-3-1" data-section="2">
+  
+  
+    PKI-Based Derived PIV Credential Maintenance <a href="#s-2-3-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>PKI-based derived PIV credentials require typical maintenance activities applicable to asymmetric cryptographic credentials, including rekeying and modification. These activities <strong>MAY</strong> be performed either remotely or in person and <strong>SHALL</strong> be conducted in accordance with the certificate policy under which the derived PIV authentication certificate is issued. When certificate rekeying or modification is performed remotely for a derived PIV credential, communication between the issuer and the cryptographic module in which the derived PIV authentication private key is stored <strong>SHALL</strong> only occur over mutually authenticated secure sessions between tested and validated cryptographic modules.</p>
+
+<p>Certain maintenance activities for the subscriber’s PIV Card trigger corresponding maintenance activities for the derived PIV credential. PKI-based derived PIV credentials <strong>SHALL</strong> be reissued if any information about the subscriber that appears in the credential changes. For example, if the subscriber’s PIV Card is reissued as a result of a change in the subscriber’s name and the subscriber’s name appears in the derived PIV authentication certificate, a new derived PIV authentication certificate with the new name <strong>SHALL</strong> be issued and the previous certificate invalidated. The subscriber then uses their current PIV authentication certificate to authenticate to the issuer, which then updates the certificate in the derived PIV credential module.</p>
+
+<div latex-literal="true" class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\clearpage
+</code></pre></div></div>
+<h3 id="non-pki-based-derived-piv-credential-maintenance" data-section="2">
+  
+  
+    Non-PKI-Based Derived PIV Credential Maintenance <a href="#non-pki-based-derived-piv-credential-maintenance" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Maintenance activities for non-PKI-based derived PIV credentials are simpler than those for PKI-based derived PIV credentials since the former do not contain information about the cardholder nor carry a specific expiration date. Identity information <strong>SHALL</strong> be maintained in the PIV identity account and <strong>SHALL</strong> be updated when needed.</p>
+
+<p>Updating a separate password used with a single-factor authenticator for use at AAL2 <strong>SHALL</strong> be performed in a mutually authenticated protected session with the home agency IdMS. The update <strong>SHALL</strong> require the entry of the current password. If resetting the password is required because the subscriber has forgotten the password or has reached the retry limit, it <strong>SHALL</strong> be done in accordance with <a href="/800-157r1/requirements/#s-3-2-3">Sec. 3.2.3</a>.</p>
+<h2 id="s-2-4" data-section="2">
+  
+  
+    Invalidation <a href="#s-2-4" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>When an authenticator associated with a derived PIV credential is compromised (e.g., lost, stolen, or damaged), that derived PIV credential <strong>SHALL</strong> be invalidated as described below.</p>
+
+<p>All derived PIV credentials associated with a given PIV identity account <strong>SHALL</strong> be invalidated when that PIV identity account is terminated, typically due to the cardholder’s loss of PIV credential eligibility. Issuers of derived PIV credentials <strong>SHALL</strong> continuously monitor the associated PIV identity account to determine its termination status. Meeting this requirement is simplified because the subject’s PIV Card, credential eligibility, and all derived PIV credentials are maintained in one account — the PIV identity account — and maintained by the home agency IdMS.</p>
+
+<p>If a PIV Card or derived PIV credential is invalidated due to loss or compromise, the home agency or issuer <strong>SHOULD</strong> check to see whether any derived PIV credentials have been recently (typically within the past seven days) bound to the PIV identity account and if so, determine whether they were appropriately issued to the subject. Termination of the PIV Card, which may occur due to loss or other compromise, does not usually require the invalidation of associated derived PIV credentials unless it is a result of termination of the associated PIV identity account.</p>
+
+<p>The non-voluntary invalidation of a derived PIV credential <strong>SHALL</strong> be handled as specified in <a href="/800-157r1/references/#ref-CSP">[CSP]</a>.</p>
+<h3 id="s-2-4-1" data-section="2">
+  
+  
+    PKI-based Derived PIV Credential Invalidation <a href="#s-2-4-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>If the derived PIV authentication private key was created and stored on a hardware module that does not permit private key export and the token is collected and either zeroized or destroyed, then the derived PIV authentication certificate <strong>SHOULD</strong> be revoked. In all other cases, the derived PIV authentication certificate <strong>SHALL</strong> be revoked.</p>
+<h3 id="s-2-4-2" data-section="2">
+  
+  
+    Non-PKI-Based Derived PIV Credential Invalidation <a href="#s-2-4-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Non-PKI-based derived PIV credentials are always directly verified by the home agency IdMS of the associated PIV Card. Therefore, termination of a non-PKI-based derived PIV credential <strong>SHALL</strong> be accomplished by invalidating the reference to the associated authenticator in the PIV identity account so that the authenticator cannot be used to authenticate to the home agency IdMS. Separate authenticators <strong>MAY</strong> be collected from the subscriber, but this is not required.</p>
+
+<h1 id="s-3" data-section="3">
+  
+  
+    Technical Requirements <a href="#s-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This section is normative.</em></p>
+
+<p>This section describes technical requirements for PKI-based and non-PKI-based derived PIV credentials and associated authenticators.</p>
+
+<p>While the following sections focus on credential and authenticator requirements, the verifier is required to meet the corresponding verifier requirements in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.</p>
+<h2 id="s-3-1" data-section="3">
+  
+  
+    PKI-Based Derived PIV Credentials <a href="#s-3-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>A PKI-based derived PIV credential is a derived PIV authentication certificate, which is an X.509 public key certificate that has been issued in accordance with the requirements of this document and <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a>. All derived PIV credentials created under previous revisions of these guidelines are PKI-based and remain valid implementations under this SP 800-157 revision. <a href="/800-157r1/model/#s-b">Appendix B</a> describes additional requirements for removable or wireless PKI-based derived PIV credentials that are used for logical access.</p>
+
+<p>Authentication using PKI-based derived PIV credentials <strong>SHALL</strong> include a check to determine that the authentication certificate is valid and current (e.g., that the certificate is unexpired and not revoked).</p>
+<h3 id="s-3-1-1" data-section="3">
+  
+  
+    Certificate Policies for PKI-Based Derived PIV Credentials <a href="#s-3-1-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Derived PIV authentication certificates <strong>SHALL</strong> be issued under either the <code class="language-plaintext highlighter-rouge">id-fpki-common-derived-pivAuth-hardware</code> policy (satisfying <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> AAL3) or the <code class="language-plaintext highlighter-rouge">id-fpki-common-derived-pivAuth</code> policy (satisfying AAL2) of <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a>. All derived PIV credentials <strong>SHALL</strong> be deemed to satisfy <a href="/800-157r1/references/#ref-SP-800-63A">[SP800-63A]</a> IAL3 since that is the identity proofing and issuance level associated with the PIV Card and bound to the PIV identity account.</p>
+
+<p>Derived PIV authentication certificates <strong>SHALL</strong> comply with the <em>Derived PIV Authentication Certificate</em> profile in <a href="/800-157r1/references/#ref-PROF">[PROF]</a>.</p>
+
+<p>The expiration date of a derived PIV authentication certificate is based on the issuer’s certificate policy and the certificate policy specified above. There is no requirement to align the expiration date of a derived PIV authentication certificate with the expiration date of the PIV authentication certificate or the expiration of the PIV Card. This allows a derived PIV credential to continue to act as an active credential while the cardholder’s PIV Card is being renewed.</p>
+<h3 id="s-3-1-2" data-section="3">
+  
+  
+    Cryptographic Specifications <a href="#s-3-1-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The cryptographic algorithm and key size requirements for the derived PIV authentication certificates and
+private keys are the same as the requirements for the PIV authentication certificate and private key, as
+specified in <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a>.</p>
+
+<p>For derived PIV authentication certificates issued under <code class="language-plaintext highlighter-rouge">id-fpki-common-pivAuth-derived-hardware</code>
+(AAL3), the derived PIV authentication key pair <strong>SHALL</strong> be generated within a cryptographic
+module that meets the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.3.2, including being validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 2 or higher with Level 3 physical security to
+protect the derived PIV authentication private key while in storage and not permitting export
+of the private key.</p>
+
+<p>For derived PIV authentication certificates issued under <code class="language-plaintext highlighter-rouge">id-fpki-common-pivAuth-derived</code> (AAL2), the
+derived PIV authentication key pair <strong>SHALL</strong> be generated within a cryptographic module that has been
+validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher. If the key pair is generated outside of the authenticator itself, the private key <strong>SHALL</strong> be transferred via an authenticated protected channel as defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>, and the authenticator <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.2.2, including being validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher.</p>
+<h3 id="s-3-1-3" data-section="3">
+  
+  
+    Allowable Authenticator Types <a href="#s-3-1-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>A multi-factor cryptographic authenticator as specified in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.7.1 <strong>SHALL</strong> be used for PKI-based derived PIV authentication. The authenticator <strong>SHALL</strong> be phishing-resistant, as described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.5. Authenticators used at AAL3 <strong>SHALL</strong> meet the additional requirements described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.3.</p>
+<h3 id="s-3-1-4" data-section="3">
+  
+  
+    Activation Data <a href="#s-3-1-4" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Activation of PKI-based derived PIV authenticators using an activation secret <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.10. Activation using a biometric characteristic <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.3.</p>
+
+<p>If the activation secret or the biometric activation factor needs to be changed, entry of the current activation secret <strong>SHALL</strong> be required to change the value. The authenticator <strong>MAY</strong> support a PIN unblocking key (PUK) that can be used by the home agency IdMS to unblock or reset the activation secret or biometric activation factor if it has been forgotten or the permitted number of consecutive wrong attempts has been reached. If reset using PUK is unavailable and the authenticator cannot be successfully activated, the authenticator <strong>SHALL</strong> be invalidated as described in <a href="/800-157r1/lifecycle/#s-2-4">Sec. 2.4</a>. A new derived PIV credential <strong>MAY</strong> then be issued.</p>
+<h2 id="s-3-2" data-section="3">
+  
+  
+    Non-PKI-Based Derived PIV Credentials <a href="#s-3-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>Non-PKI-based credentials <strong>SHALL</strong> only be used to authenticate to verifiers that are authorized by the home agency of the associated PIV Card. All verifiers of non-PKI-based derived PIV credentials <strong>SHALL</strong> access the home agency IdMS in order to determine the current validity of the associated PIV identity account. Non-PKI derived PIV credentials can be used elsewhere through federation with an IdP able to access the home agency IdMS, as described in <a href="/800-157r1/references/#ref-SP-800-217">[SP800-217]</a>.</p>
+<h3 id="s-3-2-1" data-section="3">
+  
+  
+    Allowable Authenticator Types <a href="#s-3-2-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Multi-factor or single-factor cryptographic authenticators as specified in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.7.1 and Sec. 3.1.6.1, respectively, <strong>SHALL</strong> be used for non-PKI-based derived PIV authentication. Cryptographic authenticators <strong>SHALL</strong> be phishing-resistant as described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.5. Examples of suitable authentication processes include client-authenticated TLS and WebAuthn <a href="/800-157r1/references/#ref-WebAuthn">[WebAuthn]</a>. Except for physical access applications specified in <a href="/800-157r1/pacs/#s-d">Appendix D</a>, all single-factor authenticators <strong>SHALL</strong> be used in conjunction with a password that meets the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.1. Authenticators used at AAL3 <strong>SHALL</strong> meet the additional requirements described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.3.</p>
+<h3 id="s-3-2-2" data-section="3">
+  
+  
+    Cryptographic Specifications <a href="#s-3-2-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Authenticators used as non-PKI-based derived PIV credentials <strong>SHALL</strong> meet the cryptographic requirements specified in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1 for the corresponding authenticator type.</p>
+<h3 id="s-3-2-3" data-section="3">
+  
+  
+    Activation Data <a href="#s-3-2-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Activation of the derived PIV credential using an activation secret <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.10. Activation using a biometric characteristic <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.3.</p>
+
+<p>If the activation secret or the biometric activation factor needs to be changed, entry of the current activation secret <strong>SHALL</strong> be required to change the value. If the activation secret has been forgotten or the permitted number of consecutive wrong attempts has been reached, centralized management by the home agency IdMS <strong>SHALL</strong> be required to reset the activation secret and attempt counter. If centralized reset is unavailable, the authenticator <strong>SHALL</strong> be reset and will requires re-binding to the PIV identity account, as described in <a href="/800-157r1/lifecycle/#s-2-2">Sec. 2.2</a>.</p>
+
+<h1 id="references">
+  
+  
+    References <a href="#references" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><a href="/800-157r1/references/#ref-COMMON" name="ref-COMMON">[COMMON]</a> Federal Public Key Infrastructure Policy Authority (2024)
+X.509 Certificate Policy for the U.S. Federal PKI Common Policy Framework.
+(Federal CIO Council), Version 2.8 [or as amended]. Available at <a href="https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf">https://www.idmanagement.gov/docs/fpki-x509-cert-policy-common.pdf</a></p>
+
+<p><a href="/800-157r1/references/#ref-CSP" name="ref-CSP">[CSP]</a> Rigas MJ (2020) Credentialing Standards Procedures for Issuing Personal Identity Verification Cards under HSPD-12 and New Requirement for Suspension or Revocation of Eligibility for Personal Identity Verification Credentials. (U.S. Offics of Personnel Management, Washington, DC). Available at <a href="https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf">https://www.opm.gov/suitability/suitability-executive-agent/policy/cred-standards.pdf</a></p>
+
+<p><a href="/800-157r1/references/#ref-FIPS140" name="ref-FIPS140">[FIPS140]</a> National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, DC), Federal Information Processing Standards Publication (FIPS) 140-3 [or as amended]. <a href="https://doi.org/10.6028/NIST.FIPS.140-3">https://doi.org/10.6028/NIST.FIPS.140-3</a></p>
+
+<p><a href="/800-157r1/references/#ref-FIPS201" name="ref-FIPS201">[FIPS201]</a> National Institute of Standards and Technology (2022)
+Personal Identity Verification (PIV) of Federal Employees and Contractors.
+(U.S. Department of Commerce, Washington, DC), Federal Information Processing Standards Publication (FIPS) 201-3 [or as amended]. <a href="https://doi.org/10.6028/NIST.FIPS.201-3">https://doi.org/10.6028/NIST.FIPS.201-3</a></p>
+
+<p><a href="/800-157r1/references/#ref-HSPD-12" name="ref-HSPD-12">[HSPD-12]</a> Bush GW (2004)
+Policy for a Common Identification Standard for Federal Employees and Contractors.
+(The White House, Washington, DC), Homeland Security Presidential Directive HSPD-12. Available at <a href="https://www.dhs.gov/homeland-security-presidential-directive-12">https://www.dhs.gov/homeland-security-presidential-directive-12</a></p>
+
+<p><a href="/800-157r1/references/#ref-ISO7816" name="ref-ISO7816">[ISO7816]</a> International Organization for Standardization/International Electrotechnical Commission (2004-2020)
+<em>ISO/IEC 7816 — Identification cards — Integrated circuit cards.</em> (multiple parts):</p>
+
+<ul>
+  <li>
+    <p>International Organization for Standardization/International Electrotechnical Commission (2011)
+  <em>ISO/IEC 7816-1:2011 — Identification cards — Integrated circuit cards — Part 1: Cards with Contacts — Physical characteristics.</em>
+  (International Organization for Standardization, Geneva, Switzerland) [or as amended].
+  Available at <a href="https://www.iso.org/standard/54089.html">https://www.iso.org/standard/54089.html</a></p>
+  </li>
+  <li>
+    <p>International Organization for Standardization/International Electrotechnical Commission (2007)
+  <em>ISO/IEC 7816-2:2007 — Identification cards — Integrated circuit cards — Part 2: Cards with contacts — Dimensions and location of the contacts.</em>
+  (International Organization for Standardization, Geneva, Switzerland) [or as amended].
+  Available at <a href="https://www.iso.org/standard/45989.html">https://www.iso.org/standard/45989.html</a></p>
+  </li>
+  <li>
+    <p>International Organization for Standardization/International Electrotechnical Commission (2006)
+  <em>ISO/IEC 7816-3:2006 — Identification cards — Integrated circuit cards — Part 3: Cards with contacts — Electrical interface and transmission protocols.</em>
+  (International Organization for Standardization, Geneva, Switzerland) [or as amended].
+  Available at <a href="https://www.iso.org/standard/38770.html">https://www.iso.org/standard/38770.html</a></p>
+  </li>
+  <li>
+    <p>International Organization for Standardization/International Electrotechnical Commission (2020)
+  <em>ISO/IEC 7816-4:2020 — Identification cards — Integrated circuit cards — Part 4: Organization, security and commands for interchange.</em>
+  (International Organization for Standardization, Geneva, Switzerland) [or as amended].
+  Available at <a href="https://www.iso.org/standard/77180.html">https://www.iso.org/standard/77180.html</a></p>
+  </li>
+  <li>
+    <p>International Organization for Standardization/International Electrotechnical Commission (2004)
+  <em>ISO/IEC 7816-5:2004 — Identification cards — Integrated circuit cards — Part 5: Registration of application providers.</em>
+  (International Organization for Standardization, Geneva, Switzerland) [or as amended].
+  Available at https://www.iso.org/standard/34259.html</p>
+  </li>
+  <li>
+    <p>International Organization for Standardization/International Electrotechnical Commission (2016)
+  <em>ISO/IEC 7816-6:2016 — Identification cards — Integrated circuit cards — Part 6: Interindustry data elements for interchange.</em>
+  (International Organization for Standardization, Geneva, Switzerland) [or as amended].
+  Available at <a href="https://www.iso.org/standard/64598.html">https://www.iso.org/standard/64598.html</a></p>
+  </li>
+</ul>
+
+<p><a href="/800-157r1/references/#ref-ISO14443" name="ref-ISO14443">[ISO14443]</a> International Organization for Standardization/International Electrotechnical Commission (2018)
+<em>ISO/IEC 14443-1:2018 — Cards and security devices for personal identification — Contactless proximity objects Part 1: Physical characteristics.</em>
+(International Organization for Standardization, Geneva, Switzerland) [or as amended].
+Available at <a href="https://www.iso.org/standard/73596.html">https://www.iso.org/standard/73596.html</a></p>
+
+<p><a href="/800-157r1/references/#ref-PCSC" name="ref-PCSC">[PCSC]</a> Personal Computer/Smart Card Workgroup (2020)
+<em>PC/SC Workgroup Specifications Overview.</em>
+Available at <a href="https://pcscworkgroup.com/specifications/">https://pcscworkgroup.com/specifications/</a></p>
+
+<p><a href="/800-157r1/references/#ref-PROF" name="ref-PROF">[PROF]</a> Federal Public Key Infrastructure Policy Authority (2021) X.509 Certificate and Certificate Revocation List (CRL) Profiles. (Federal CIO Council), Version 2.1 [or as amended]. Available at <a href="https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common.pdf">https://www.idmanagement.gov/docs/fpki-x509-cert-profile-common.pdf</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-63A" name="ref-SP-800-63A">[SP800-63A]</a> Temoshok D, Abruzzi C, Fenton JL, Galluzzo R, LaSalle C, Lefkovitz N, Regenscheid A (2024) Digital Identity Guidelines: Identity Proofing and Enrollment. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) NIST SP 800-63A-4 2pd [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-63A-4.2pd">https://doi.org/10.6028/NIST.SP.800-63A-4.2pd</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-63B" name="ref-SP-800-63B">[SP800-63B]</a> Temoshok D, Fenton JL, Choong YY, Lefkovitz N, Regenscheid A, Richer JP (2024) Digital Identity Guidelines: Authentication and Authenticator Management. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) NIST SP 800-63B-4 2pd [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-63B-4.2pd">https://doi.org/10.6028/NIST.SP.800-63B-4.2pd</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-73pt1" name="ref-SP-800-73pt1">[SP800-73pt1]</a> Ferraiolo H, Mehta K, Francomacaro S, Chandramouli R, Gupta S (2024) Interfaces for Personal Identity Verification: Part 1 – PIV Card Application Namespace, Data Model, and Representation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) NIST SP 800-73pt1-5 [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-73pt1-5">https://doi.org/10.6028/NIST.SP.800-73pt1-5</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-73pt2" name="ref-SP-800-73pt2">[SP800-73pt2]</a> Ferraiolo H, Mehta K, Francomacaro S, Chandramouli R, Gupta S (2024) Interfaces for Personal Identity Verification: Part 2 – PIV Card Application Card Command Interface. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) NIST SP 800-73pt2-5 [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-73pt2-5">https://doi.org/10.6028/NIST.SP.800-73pt2-5</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-78" name="ref-SP-800-78">[SP800-78]</a> Ferraiolo H, Regenscheid A (2024) Cryptographic Algorithms and Key Sizes for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) NIST SP 800-78-5 [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-78-5">https://doi.org/10.6028/NIST.SP.800-78-5</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-79" name="ref-SP-800-79">[SP800-79]</a> Ferraiolo H, Regenscheid A, Gupta S, Ghadiali N (2023) Guidelines for the Authorization of PIV Card and Derived PIV Credential Issuers. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) NIST SP 800-79r3 ipd [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-79r3.ipd">https://doi.org/10.6028/NIST.SP.800-79r3.ipd</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-96" name="ref-SP-800-96">[SP800-96]</a> Dray JF, Giles A, Kelley M, Chandramouli R (2006) PIV Card to Reader Interoperability Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-96 [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-96">https://doi.org/10.6028/NIST.SP.800-96</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-116" name="ref-SP-800-116">[SP800-116]</a> Ferraiolo H, Mehta KL, Ghadiali N, Mohler J, Johnson V, Brady S (2018) A Recommendation for the Use of PIV Credentials in Physical Access Control Systems (PACS). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-116, Rev. 1 [or as amended]. https://doi.org/10.6028/NIST.SP.800-116r1</p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-124" name="ref-SP-800-124">[SP800-124]</a> Howell G, Franklin JM, Sritapan V, Souppaya MP, Scarfone KA (2023) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124r2 [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-124r2">https://doi.org/10.6028/NIST.SP.800-124r2</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-166" name="ref-SP-800-166">[SP800-166]</a> Cooper D, Ferraiolo H, Chandramouli R, Ghadiali N, Mohler J, Brady S (2016) Derived PIV Application and Data Model Test Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-166 [or as amended]. <a href="https://doi.org/10.6028/NIST.SP.800-166">https://doi.org/10.6028/NIST.SP.800-166</a></p>
+
+<p><a href="/800-157r1/references/#ref-SP-800-217" name="ref-SP-800-217">[SP 800-217]</a> Ferraiolo H, Regenscheid A, Richer JP (2024)
+Guidelines for the Use of Personal Identity Verification (PIV) Credentials with Federation
+(National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-217 fpd [or as amended].
+<a href="https://doi.org/10.6028/NIST.SP.800-217.fpd">https://doi.org/10.6028/NIST.SP.800-217.fpd</a></p>
+
+<p><a href="/800-157r1/references/#ref-WebAuthn" name="ref-WebAuthn">[WebAuthn]</a> Hodges J, Jones JC, Jones MB, Kumar A, Lundberg E (2021) Web Authentication: An API for accessing Public Key Credentials - Level 2. (World Wide Web Consortium, Cambridge, MA). Available at <a href="https://www.w3.org/TR/2021/REC-webauthn-2-20210408/">https://www.w3.org/TR/2021/REC-webauthn-2-20210408/</a></p>
+
+<h1 id="s-a" data-section="A">
+  
+  
+    Digital Signature and Key Management Keys <a href="#s-a" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This appendix is informative.</em></p>
+
+<p>In addition to the PIV authentication keys, <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a> also requires each PIV Card to have a digital signature key and a key management key unless the cardholder does not have a government-issued email account at the time of credential issuance. A subscriber who has been issued a derived PIV credential may also need a digital signature and key management key.</p>
+
+<p>To decrypt data that was previously encrypted using one of the older key management public keys, it would be necessary to store a copy of the PIV Card’s key management private key and certificate in the keystore that hosts the derived PIV credential. Neither <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a> nor <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a> precludes a key management private key from being used on more than one device (e.g., the PIV Card and a derived PIV credential keystore) as long as all of the requirements of the policy under which the key management certificate was issued are satisfied. This means that to use a copy of a key management private key in a <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 software cryptographic module, the corresponding certificate would have to be issued under a certificate policy, such as <code class="language-plaintext highlighter-rouge">id-fpki-common-policy</code>, that does not require the use of a <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 2 hardware cryptographic module. This should be considered when issuing the key management certificate placed on the PIV Card. Key recovery mechanisms are encouraged for key management keys used on derived PIV credential keystores.</p>
+
+<p>As the digital signature key on a PIV Card cannot be copied, a new digital signature private key will need to be generated and a corresponding certificate will need to be issued for the derived PIV credential keystore. The issuance of this private key and certificate is independent of the issuance of the PIV Card. As the certificate policies associated with digital signature certificates in <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a> (<code class="language-plaintext highlighter-rouge">id-fpki-common-policy</code>, <code class="language-plaintext highlighter-rouge">id-fpki-common-hardware</code>, and <code class="language-plaintext highlighter-rouge">id-fpki-common-High</code>) are not limited to use with PIV Cards, a digital signature certificate for a derived PIV credential keystore may be issued under one of these policies as long as all of the policy requirements are satisfied.</p>
+
+<h1 id="s-b" data-section="B">
+  
+  
+    Data Model and Interfaces for Removable or Wireless PKI-Based Cryptographic Authenticators <a href="#s-b" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This appendix is normative.</em></p>
+
+<p>This appendix provides data model and interface requirements for PKI-based derived PIV applications implemented on removable or wireless cryptographic authenticators. Use of wireless cryptographic authenticators in this appendix is applicable to logical access. Wireless authenticators for physical access (e.g., facility access) are specified in <a href="/800-157r1/pacs/#s-d">Appendix D</a>.</p>
+<h2 id="derived-piv-application-data-model-and-representation" data-section="B">
+  
+  
+    Derived PIV Application Data Model and Representation <a href="#derived-piv-application-data-model-and-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>The data model and representation requirements for derived PIV applications are based on the requirements for PIV Card applications, as described in <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. Test requirements and test assertions for testing the derived PIV application and associated derived PIV data objects implemented on removable hardware tokens are specified in <a href="/800-157r1/references/#ref-SP-800-166">[SP800-166]</a>, <em>Derived PIV Application and Data Model Test Guidelines</em>. The specifications for the mandatory and optional data objects listed below are the same as the specifications for the corresponding data objects on a PIV Card application, as described in <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-application-identifier" data-section="B">
+  
+  
+    Derived PIV Application Identifier <a href="#derived-piv-application-identifier" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The PIV application ID (AID) <strong>SHOULD</strong> be used to maximize interoperability with PIV Cards. For reference, that application ID is (in hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08      00 00 10 00       01 00
+</code></pre></div></div>
+
+<p>Alternatively, the derived PIV application identifier defined in the previous edition of this guideline <strong>MAY</strong> be used. This application ID is deprecated and may not be included in future editions of this guideline. That application ID is (in hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08      00 00 20 00       01 00
+</code></pre></div></div>
+
+<p>No other application ID <strong>SHALL</strong> be used.</p>
+
+<p>The PIV or derived PIV application can be selected as the current application on the removable cryptographic token by providing the full AID listed above or the right-truncated version, as follows (hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08       00 00 x0 00
+</code></pre></div></div>
+
+<p>where ‘x’ is either 1 for the PIV application or 2 for the derived PIV application.</p>
+<h3 id="s-b-1-2" data-section="B">
+  
+  
+    Derived PIV Application Data Model Elements <a href="#s-b-1-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The derived PIV application <strong>SHALL</strong> contain the following mandatory interoperable data object:</p>
+
+<dl>
+  <dt>X.509 Certificate for Derived PIV Authentication</dt>
+  <dd>The read access control rule for the X.509 certificate for derived PIV authentication and the PKI cryptographic function access rule for the corresponding private key are as described for the X.509 certificate for PIV authentication in Sec. 3.1.3 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+</dl>
+
+<p>The following data objects <strong>MAY</strong> also be present:</p>
+
+<dl>
+  <dt>X.509 Certificate for Digital Signature</dt>
+  <dd>The read access control rule for the X.509 certificate for digital signature and the PKI cryptographic function access rule for the corresponding private key are as described in Sec. 3.2.1 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+  <dt>X.509 Certificate for Key Management</dt>
+  <dd>The read access control rule for the X.509 certificate for key management and the PKI cryptographic function access rule for the corresponding private key are as described in Sec. 3.2.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+  <dt>Discovery Object</dt>
+  <dd>The requirements for the discovery object are as described in Sec. 3.3.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, except for the following:
+
+    <ul>
+      <li>References to “PIV card application AID” are replaced by “derived PIV application AID.”</li>
+      <li>References to “PIV card application PIN” are replaced by “derived PIV activation secret.”</li>
+      <li>The first byte of the PIN usage policy <strong>SHALL</strong> be set to <code class="language-plaintext highlighter-rouge">0x40</code> to indicate that the virtual contact interface (VCI) is not implemented, <code class="language-plaintext highlighter-rouge">0x48</code> to indicate that a pairing code is required to establish a VCI, or <code class="language-plaintext highlighter-rouge">0x4C</code> to indicate that no pairing code is required to establish a VCI. This also means that neither the global PIN nor the on-card biometric comparison (OCC) satisfies the access control rules for command execution and data object access within the derived PIV application.</li>
+    </ul>
+  </dd>
+  <dt>Key History Object</dt>
+  <dd>Up to 20 retired key management private keys <strong>MAY</strong> be stored in the derived PIV application. The Key History Object <strong>SHALL</strong> be present in the derived PIV application if the derived PIV application contains any retired key management private keys but <strong>MAY</strong> be present even if no such keys are present in the derived PIV application. The requirements for the key history object are as described in Sec. 3.3.3 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, except for the following:
+
+    <ul>
+      <li>References to <em>keysWithOnCardCerts</em> <strong>SHOULD</strong> be interpreted as keys for which the corresponding certificate is populated within the derived PIV application.</li>
+      <li>References to <em>keysWithOffCardCerts</em> <strong>SHOULD</strong> be interpreted as keys for which the corresponding certificate is not populated within the derived PIV application.</li>
+      <li>References to <em>offCardCertURL</em> <strong>SHOULD</strong> be interpreted as a URL that points to a file containing the certificates that correspond to all of the retired key management private keys within the derived PIV application, including those for which the corresponding certificate is stored within the derived PIV application.</li>
+    </ul>
+  </dd>
+  <dt>Retired X.509 Certificates for Key Management</dt>
+  <dd>The read access control rules for the retired X.509 certificates for key management and the PKI cryptographic function access rules for corresponding private keys are as described in Sec. 3.3.4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+  <dt>Security Object</dt>
+  <dd>The security object <strong>SHALL</strong> be present in the derived PIV application if the discovery object, the key history object, or the optional pairing code reference data container is present. The requirements for the security object are as described in Sec. 3.1.7 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, except for the following:
+
+    <ul>
+      <li>The security object for a derived PIV application is signed using a private key whose corresponding public key is contained in a PIV content signing certificate that satisfies the requirements for certificates used to verify signatures on cardholder unique identifiers (CHUID), as specified in Sec. 4.2.1 of <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a>.</li>
+      <li>The signature field of the Security Object, tag <code class="language-plaintext highlighter-rouge">0xBB</code>, <strong>SHALL</strong> include the derived PIV credential issuer’s certificate.</li>
+      <li>The security object <strong>SHALL</strong> include all unsigned data objects (i.e., the discovery object, the key history object, and the pairing code reference data container) within the derived PIV application.</li>
+    </ul>
+  </dd>
+  <dt>Secure Messaging Certificate Signer</dt>
+  <dd>Derived PIV credential applications that support the virtual contact interface (VCI) capability <strong>SHALL</strong> include the secure messaging certificate signer object described in Sec. 3.3.7 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+  <dt>Pairing Code Reference Data Container</dt>
+  <dd>Derived PIV credential applications that support the virtual contact interface (VCI) using a pairing code <strong>SHALL</strong> include the pairing code reference data container described in Sec. 3.3.8 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+</dl>
+
+<div latex-literal="true" class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\clearpage
+</code></pre></div></div>
+<h4 id="derived-piv-application-data-object-containers-and-associated-access-rules" data-section="B">
+  
+  
+    Derived PIV Application Data Object Containers and Associated Access Rules <a href="#derived-piv-application-data-object-containers-and-associated-access-rules" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+
+<p>Section 3.5 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> provides the container IDs and access rules for the mandatory and optional data objects for a derived PIV application with the following mappings:</p>
+
+<p latex-ignore="true"><a href="/800-157r1/model/#table-1" name="table-1">Table 1. Mapping of Data Objects</a></p>
+
+<table latex-table="1" latex-caption="Mapping of Data Objects">
+  <thead>
+    <tr>
+      <th>Derived PIV Application Data Object</th>
+      <th>PIV Card Application Data Object</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X.509 Certificate for Derived PIV Authentication</td>
+      <td>X.509 Certificate for PIV Authentication</td>
+    </tr>
+    <tr>
+      <td>Security Object</td>
+      <td>Security Object</td>
+    </tr>
+    <tr>
+      <td>X.509 Certificate for Digital Signature</td>
+      <td>X.509 Certificate for Digital Signature</td>
+    </tr>
+    <tr>
+      <td>X.509 Certificate for Key Management</td>
+      <td>X.509 Certificate for Key Management</td>
+    </tr>
+    <tr>
+      <td>Discovery Object</td>
+      <td>Discovery Object</td>
+    </tr>
+    <tr>
+      <td>Key History Object</td>
+      <td>Key History Object</td>
+    </tr>
+    <tr>
+      <td>Retired X.509 Certificate for Key Management [1:20]</td>
+      <td>Retired X.509 Certificate for Key Management [1:20]</td>
+    </tr>
+    <tr>
+      <td>Secure Messaging Certificate Signer</td>
+      <td>Secure Messaging Certificate Signer</td>
+    </tr>
+    <tr>
+      <td>Pairing Code Reference Data Container</td>
+      <td>Pairing Code Reference Data Container</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The detailed data model specifications for each of the data objects of the derived PIV application are the same as the specifications for the corresponding data objects (mapped per <a href="/800-157r1/model/#table-1">Table 1</a>) of the PIV Card application as described in Appendix A of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, except for the following:</p>
+
+<ul>
+  <li>
+    <p>The security object for the derived PIV application is optional. It is required if the optional discovery object, the optional key history object, or the optional pairing code reference data container is present.</p>
+  </li>
+  <li>
+    <p>The minimum capacity for the security object container <strong>SHALL</strong> be 3000 bytes to allow space for the derived PIV credential issuer’s certificate.</p>
+  </li>
+</ul>
+<h3 id="derived-piv-application-data-objects-representation" data-section="B">
+  
+  
+    Derived PIV Application Data Objects Representation <a href="#derived-piv-application-data-objects-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The ASN.1 object identifiers (OID) and “basic encoding rules – tag length value” (BER-TLV) tags for the mandatory and optional data objects within the derived PIV application are the same as for the corresponding data objects (mapped per <a href="/800-157r1/model/#table-1">Table 1</a>) of the PIV Card application, as described in Sec. 4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-application-data-types-and-their-representation" data-section="B">
+  
+  
+    Derived PIV Application Data Types and Their Representation <a href="#derived-piv-application-data-types-and-their-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>This appendix describes the data types used in the derived PIV application command interface.</p>
+<h4 id="derived-piv-application-key-references-and-security-conditions-of-use" data-section="B">
+  
+  
+    Derived PIV Application Key References and Security Conditions of Use <a href="#derived-piv-application-key-references-and-security-conditions-of-use" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+
+<p>Key references are assigned to keys and secrets of the derived PIV application. Table 8 of <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a> and Table 4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> define the key reference values that <strong>SHALL</strong> be used on the derived PIV application interfaces with the following mappings:</p>
+
+<p latex-ignore="true"><a href="/800-157r1/model/#table-2" name="table-2">Table 2. Mapping of Key Types</a></p>
+
+<table latex-table="2" latex-caption="Mapping of Key Types">
+  <thead>
+    <tr>
+      <th>Derived PIV Key Type</th>
+      <th>PIV Key Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Derived PIV Activation Secret</td>
+      <td>PIV Card Application PIN</td>
+    </tr>
+    <tr>
+      <td>Activation Secret Unblocking Key</td>
+      <td>PIN Unblocking Key</td>
+    </tr>
+    <tr>
+      <td>Derived PIV Authentication Key</td>
+      <td>PIV Authentication Key</td>
+    </tr>
+    <tr>
+      <td>Derived PIV Token Management Key</td>
+      <td>Card Management Key</td>
+    </tr>
+    <tr>
+      <td>Digital Signature Key</td>
+      <td>Digital Signature Key</td>
+    </tr>
+    <tr>
+      <td>Key Management Key</td>
+      <td>Key Management Key</td>
+    </tr>
+    <tr>
+      <td>Retired Key Management Key</td>
+      <td>Retired Key Management Key</td>
+    </tr>
+    <tr>
+      <td>Derived PIV Secure Messaging Key</td>
+      <td>PIV Secure Messaging Key</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The key reference specifications in Sec. 5.1 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> apply to the corresponding keys included in the derived PIV application (mapped per <a href="/800-157r1/model/#table-2">Table 2</a>), except for the following:</p>
+
+<ul>
+  <li>
+    <p>References to “PIV Card application” are replaced with “derived PIV application.”</p>
+  </li>
+  <li>
+    <p>References in the “Security Condition for Use” column to “PIN or OCC” are replaced with “derived PIV activation secret.”</p>
+  </li>
+</ul>
+<h4 id="derived-piv-application-cryptographic-algorithm-and-mechanism-identifiers" data-section="B">
+  
+  
+    Derived PIV Application Cryptographic Algorithm and Mechanism Identifiers <a href="#derived-piv-application-cryptographic-algorithm-and-mechanism-identifiers" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+
+<p>The algorithm identifiers for the cryptographic algorithms that <strong>MAY</strong> be recognized on the derived PIV application interfaces are the symmetric and asymmetric identifiers specified in Table 9 and Table 10 of <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a>. The cryptographic mechanism identifiers that <strong>MAY</strong> be recognized on the derived PIV application interfaces are those specified in Table 5 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h4 id="derived-piv-application-status-words" data-section="B">
+  
+  
+    Derived PIV Application Status Words <a href="#derived-piv-application-status-words" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+
+<p>The status words that <strong>MAY</strong> be returned on the derived PIV application command interface are as specified in Sec. 5.6 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-authentication-mechanisms" data-section="B">
+  
+  
+    Derived PIV Authentication Mechanisms <a href="#derived-piv-authentication-mechanisms" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The derived PIV application supports the following validation steps:</p>
+
+<ul>
+  <li>
+    <p>Credential validation (CredV) is established by verifying the certificates retrieved from the derived PIV application and checking the validity and revocation status of these certificates.</p>
+  </li>
+  <li>
+    <p>Derived PIV application holder validation (HolderV) is established when the authenticator holder proves knowledge of the derived PIV activation secret associated with the derived PIV credential that contains valid and unrevoked certificates.</p>
+  </li>
+</ul>
+
+<p>The derived PIV application facilitates a single authentication mechanism, which is a cryptographic challenge and response authentication protocol that uses the derived PIV authentication private key as described in Appendix B.1.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> with the following translations:</p>
+
+<ul>
+  <li>References to “PIV application” are replaced with “derived PIV application.”</li>
+  <li>References to “PIV auth certificate” are replaced with “derived PIV authentication certificate.”</li>
+  <li>References to “PIV Card app ID” are replaced with “derived PIV application ID.”</li>
+</ul>
+
+<p>Authentication can also be performed wirelessly over a virtual contact interface (VCI) if a VCI has been established with the derived PIV application.</p>
+<h2 id="derived-piv-application-token-command-interface" data-section="B">
+  
+  
+    Derived PIV Application Token Command Interface <a href="#derived-piv-application-token-command-interface" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>This appendix contains the technical specifications for the command interface to the derived PIV application surfaced by the card edge of the integrated circuit card (ICC) that represents the removable cryptographic authenticator. The command interface for the derived PIV application <strong>SHALL</strong> implement all of the card commands supported by the PIV Card application as described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, which include:</p>
+
+<ul>
+  <li>SELECT</li>
+  <li>GET DATA</li>
+  <li>VERIFY</li>
+  <li>CHANGE REFERENCE DATA</li>
+  <li>RESET RETRY COUNTER</li>
+  <li>GENERAL AUTHENTICATE</li>
+  <li>PUT DATA</li>
+  <li>GENERATE ASYMMETRIC KEY PAIR</li>
+</ul>
+
+<p>The specifications for the token command interface <strong>SHALL</strong> be the same as the specifications for the corresponding card edge commands for a PIV Card as described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, except for the following deviations:</p>
+
+<ul>
+  <li>References to “PIV Card application” are replaced with “derived PIV application.”</li>
+  <li>References to “PIV data objects” are replaced with “derived PIV data objects.”</li>
+  <li>References to “PIV authentication key” are replaced with “derived PIV authentication key.”</li>
+  <li>The derived PIV activation secret <strong>SHALL</strong> satisfy the criteria specified in Appendix B.2.1 of this document rather than Sec. 2.4.3 of <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>.</li>
+  <li>In Appendix A:
+    <ul>
+      <li>References to “PIV Card application administrator” are replaced with “derived PIV application administrator.”</li>
+      <li>References to “card management key” are replaced with “derived PIV token management key.”</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The token platform <strong>SHALL</strong> support a default selected application, which is the application chosen following a cold or warm reset. This default application may be the derived PIV application or another application.</p>
+<h3 id="authentication-of-an-individual" data-section="B">
+  
+  
+    Authentication of an Individual <a href="#authentication-of-an-individual" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Knowledge of a secret (specifically the derived PIV activation secret) is how an individual can be authenticated to the derived PIV application.</p>
+
+<p>The derived PIV activation secret <strong>SHALL</strong> be between 6 and 8 bytes in length. If the actual length of the derived PIV activation secret is less than 8 bytes, it <strong>SHALL</strong> be padded to 8 bytes with <code class="language-plaintext highlighter-rouge">0xFF</code> when presented to the token command interface. The <code class="language-plaintext highlighter-rouge">0xFF</code> padding bytes <strong>SHALL</strong> be appended to the actual value of the secret. The bytes that comprise the derived PIV activation secret <strong>SHALL</strong> be limited to values <code class="language-plaintext highlighter-rouge">0x30</code> – <code class="language-plaintext highlighter-rouge">0x39</code>, <code class="language-plaintext highlighter-rouge">0x41</code> – <code class="language-plaintext highlighter-rouge">0x5A</code>, and <code class="language-plaintext highlighter-rouge">0x61</code> – <code class="language-plaintext highlighter-rouge">0x7A</code>: the ASCII values for the decimal digits ‘0’ – ‘9’; upper case characters ‘A’ – ‘Z’; and lower case characters ‘a’ – ‘z’. For example,</p>
+
+<ul>
+  <li>Actual derived PIV activation secret: “Part21” or (hexadecimal) <code class="language-plaintext highlighter-rouge">50 61 72 74 32 31</code></li>
+  <li>Padded derived PIV activation secret presented to the card command interface (hexadecimal): <code class="language-plaintext highlighter-rouge">50 61 72 74 32 31 FF FF</code></li>
+</ul>
+
+<p>The derived PIV application <strong>SHALL</strong> enforce the minimum length requirement of 6 bytes for the derived PIV activation secret (i.e., <strong>SHALL</strong> verify that at least the first 6 bytes of the value presented to the card command interface are in the range <code class="language-plaintext highlighter-rouge">0x30</code> – <code class="language-plaintext highlighter-rouge">0x39</code>, <code class="language-plaintext highlighter-rouge">0x41</code> – <code class="language-plaintext highlighter-rouge">0x5A</code>, or <code class="language-plaintext highlighter-rouge">0x61</code> – <code class="language-plaintext highlighter-rouge">0x7A</code>) as well as the other formatting requirements specified in this section.</p>
+
+<h1 id="s-c" data-section="C">
+  
+  
+    Example Issuance Processes <a href="#s-c" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This appendix is informative.</em></p>
+
+<p>The issuance process for a derived PIV credential varies depending on whether it is being issued for use at AAL2 or AAL3. <a href="/800-157r1/lifecycle/#s-2-2">Section 2.2</a> specifies the requirements for initial issuance. This appendix provides example issuance processes that satisfy those requirements at AAL2 and at AAL3. These examples assume the PKI-AUTH authentication mechanism will be used with a valid PIV Card to enable the issuance process.</p>
+<h2 id="s-c-1" data-section="C">
+  
+  
+    Example Issuance of a PKI-Based Derived PIV Credential at AAL3 <a href="#s-c-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>An employee requires a derived PIV credential to access a relying party application that requires authentication at AAL3. Their endpoint does not easily accommodate their PIV Card, and the application resides at a different agency that does not support federation, so a PKI-based credential is needed. A request to issue a derived PIV credential is submitted to the agency’s approval authority and is approved.</p>
+
+<p>The employee visits their security office or other issuing authority. If the issuance of a derived PIV credential has been approved, they are provided with a USB authenticator capable of supporting the derived PIV application and meeting AAL3 requirements. After authenticating with their PIV Card using the PKI-AUTH authentication mechanism, the USB authenticator is provisioned, which involves the generation of a key pair for the derived PIV authentication certificate within the device’s cryptographic module and export of the public key to the IDMS, which generates the certificate and loads it onto the authenticator. The employee is also prompted to establish an activation secret for the credential. The issuer enters information about the new derived PIV credential into the subscriber’s PIV identity account. The employee is notified of the binding of the new derived PIV credential by email or postal notification to their address in the PIV identity account.</p>
+
+<p>Additional data elements described in <a href="/800-157r1/model/#s-b-1-2">Appendix B.1.2</a> may also be provisioned on the device.</p>
+<h2 id="s-c-2" data-section="C">
+  
+  
+    Example Issuance of a PKI-Based Derived PIV Credential at AAL2 <a href="#s-c-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>An employee requires a mobile device for work. The mobile device is ordered, and a request to issue a derived PIV credential is submitted to the agency’s approval authority.</p>
+
+<p>Following receipt of the device and approval, the employee starts the binding process remotely — such as from their home — by visiting a derived PIV credential website operated by or on behalf of their PIV Card’s home agency IDMS. The website requires TLS client authentication using the PKI-AUTH authentication method with the employee’s PIV Card. The employee performs this step from a desktop computer since they cannot use their PIV Card on a mobile device. Having authenticated the employee, the server verifies PIV credential eligibility in the employee’s PIV identity account. Once the employee has successfully authenticated to the server, the issuer generates and displays a binding secret to the employee.</p>
+
+<p>The employee then runs a provisioning application on the mobile device. The application asks the employee to identify themselves and enter the binding secret previously provided from the desktop website to create an activation secret, which will subsequently be used to authenticate to the cryptographic module. The application generates a key pair within the device’s cryptographic module and submits the binding secret and newly generated public key to the PIV issuer as part of a certificate request. The PIV issuer authenticates the employee by verifying that the certificate request’s binding secret matches the one it previously issued and forwards the public key to the CA, which signs and issues the derived PIV credential (i.e., the derived PIV authentication certificate). The provisioning application loads the derived PIV authentication certificate on the mobile device. The PIV Card issuer enters information about the new derived PIV credential into the subscriber’s PIV identity account. The cardholder is notified of the binding of the new derived PIV credential by email or postal notification to their address in the PIV identity account.</p>
+
+<p>Normative requirements for this process are given in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 4.1.2.2 and in <a href="/800-157r1/lifecycle/#s-2-2">Sec. 2.2</a> of this document.</p>
+<h2 id="s-c-3" data-section="C">
+  
+  
+    Example Binding of a Non-PKI-Based Derived PIV Credential at AAL3 <a href="#s-c-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>An employee requires a derived PIV credential to access a relying party using one or more endpoints that do not accommodate the direct use of a PIV Card. The employee requests a non-PKI-based authenticator capable of authentication at AAL3 and approval to use that authenticator as a derived PIV credential. The agency’s approval authority approves the request.</p>
+
+<p>After receiving the approval and authenticator, the employee starts the binding process by authenticating with their PIV Card using PKI-AUTH at a derived PIV credential website operated by or on behalf of the employee’s home agency IdMS. The website requires TLS client authentication with the PKI-AUTH authentication method using the employee’s PIV Card. Having authenticated the employee, the server verifies eligibility to possess a PIV Card. The employee then inserts (connects) the authenticator to be used as a derived PIV credential and registers (binds) that credential, including establishing a second authentication factor (activation secret or biometric characteristic) if that has not already been done. The website determines whether the authenticator meets AAL3 requirements. Upon successful registration, the home agency’s endpoint stores the subscriber’s key and appropriate metadata for non-PKI-based PIV authentication. The PIV Card issuer enters information about the new derived PIV credential into the subscriber’s PIV identity account. The employee is notified of the binding of the new derived PIV credential by email or postal notification to their address in the PIV identity account.</p>
+
+<p>If the authenticator uses verifier name binding as described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.5.2, the website used to register the authenticator has to share the same domain name as will be used by the home agency IdMS to authenticate the subscriber so that the same keys are used for registration and authentication.</p>
+<h2 id="s-c-4" data-section="C">
+  
+  
+    Example Binding of a Non-PKI-Based Derived PIV Credential at AAL2 <a href="#s-c-4" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>The binding of a non-PKI-based derived PIV credential at AAL2 is identical to that at AAL3, except that the authenticator needs only to meet the requirements of AAL2.</p>
+<h2 id="example-binding-of-pacs-credential" data-section="C">
+  
+  
+    Example Binding of PACS Credential <a href="#example-binding-of-pacs-credential" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>To enable a derived PIV credential to be used for physical access as described in <a href="/800-157r1/pacs/#s-d">Appendix D</a>, the applicant first authenticates using their PIV Card and the PKI-AUTH authentication method. Having authenticated the employee, the server verifies PIV credential eligibility in the applicant’s PIV identity account. The issuer generates a new CHUID data object, derived card authentication key, and derived card authentication certificate. If the SM-AUTH authentication method is supported, a key pair is generated. The issuer creates a corresponding derived card verifiable certificate and secure messaging certificate signer object. The issuer transfers the created objects to the derived PIV credential module using a TLS or similar authenticated protected channel. Because the PACS credential is a single authentication factor, it is not necessary to establish an activation factor.</p>
+
+<p>The PIV Card issuer enters information about the new derived PIV credential into the subscriber’s PIV identity account. The cardholder is notified of the binding of the new derived PIV credential.</p>
+
+<h1 id="s-d" data-section="D">
+  
+  
+    Physical Access <a href="#s-d" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This appendix is normative.</em></p>
+
+<p>Credentials on PIV cards are commonly used to identify and authenticate individuals accessing government facilities. Agencies <strong>MAY</strong> issue derived PIV credentials for use with physical access control systems. This appendix provides data model and interface requirements for derived PIV applications for physical access. To facilitate compatibility with PIV readers, these requirements reference the requirements for the PIV card and PIV card application specified in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>.</p>
+
+<p>Authentication to physical access control systems (PACS) using derived PIV credentials <strong>MAY</strong> use the PKI-CAK or SM-AUTH authentication mechanisms described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a> and <a href="/800-157r1/references/#ref-SP-800-116">[SP800-116]</a>. Derived PIV credential modules that support PACS <strong>SHALL</strong> support the PKI-CAK authentication mechanism. Physical access <strong>SHALL</strong> be supported by contactless readers that conform to <a href="/800-157r1/references/#ref-ISO14443">[ISO14443]</a> for the card-to-reader interface and conform to <a href="/800-157r1/references/#ref-ISO7816">[ISO7816]</a> for data transmitted over the <a href="/800-157r1/references/#ref-ISO14443">[ISO14443]</a> link.  If readers are connected to general-purpose desktop computing systems, they <strong>SHALL</strong> conform to <a href="/800-157r1/references/#ref-PCSC">[PCSC]</a> for the reader-to-host system interface and the requirements specified in <a href="/800-157r1/references/#ref-SP-800-96">[SP800-96]</a>. This standard does not specify the reader-to-host system interface in systems where the readers are not connected to general-purpose desktop computing systems.</p>
+
+<p>Since the PKI-CAK and SM-AUTH authentication mechanisms are single-factor, there is no need to establish an activation factor for these physical access methods.</p>
+
+<p>Issuance of derived PIV credentials that support PACS <strong>SHALL</strong> be done in accordance with the post-enrollment binding described in <a href="/800-157r1/lifecycle/#s-2-2">Sec. 2.2</a> and the PKI-based PIV credential issuance procedures described in <a href="/800-157r1/lifecycle/#s-2-2-1">Sec. 2.2.1</a>. Issuance of derived PIV credentials in support of PACS without a PIV card <strong>SHALL</strong> follow <a href="/800-157r1/lifecycle/#s-2-2-3">Sec. 2.2.3</a>.</p>
+<h2 id="pacs-derived-piv-application-data-model-and-representation" data-section="D">
+  
+  
+    PACS Derived PIV Application Data Model and Representation <a href="#pacs-derived-piv-application-data-model-and-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>The data model and representation requirements for the derived PIV application are based on the requirements for the PIV Card application, as described in <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. Test requirements and test assertions for testing the derived PIV application and associated derived PIV data objects implemented on removable hardware tokens are specified in <a href="/800-157r1/references/#ref-SP-800-166">[SP800-166]</a>, <em>Derived PIV Application and Data Model Test Guidelines</em>. The specifications for the mandatory and optional data objects listed below are the same as the specifications for the corresponding data objects on a PIV Card application, as described in <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, with exceptions as noted.</p>
+<h3 id="derived-piv-application-identifier" data-section="D">
+  
+  
+    Derived PIV Application Identifier <a href="#derived-piv-application-identifier" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>Either the PIV card application identifier (AID) defined in Sec. 2.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> or the derived PIV application AID, defined in <a href="/800-157r1/model/#s-b">Appendix B</a>, <strong>SHALL</strong> be used. To maximize compatibility with existing PACS readers, the AID of the PIV card application <strong>SHOULD</strong> be used unless the use of the derived PIV AID for logical access makes this infeasible.</p>
+
+<p>For reference, the AID of the PIV card application is (in hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08      00 00 10 00       01 00
+</code></pre></div></div>
+
+<p>The AID of the derived PIV application is (in hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08      00 00 20 00       01 00
+</code></pre></div></div>
+
+<p>The desired application can be selected by providing the full AID listed above or a truncated version that omits the last two bytes ‘01 00’.</p>
+<h3 id="s-d-1-2" data-section="D">
+  
+  
+    PACS Derived PIV Application Data Model Elements <a href="#s-d-1-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The derived PIV application <strong>SHALL</strong> contain the following data objects when used for PACS:</p>
+
+<dl>
+  <dt>Derived CHUID Data Object</dt>
+  <dd>The read access control rule for the derived CHUID data object is as described for the CHUID data object specified in Sec. 3.1.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> except that it <strong>SHALL</strong> be accessible only via the contactless interface. The FASC-N and card UUID contained within the derived CHUID data object <strong>SHALL</strong> be distinct from the corresponding values on the PIV card and any other derived PIV credential module.<sup id="fnref:distinct" role="doc-noteref"><a href="#fn:distinct" class="footnote">1</a></sup> This data object is required for access control systems that use the FASC-N or the card UUID in the CHUID to look up authorization information rapidly. The derived CHUID <strong>SHALL NOT</strong> be used for authentication since that authentication method has been withdrawn. If the optional cardholder UUID is included in the derived CHUID data object, it <strong>SHALL</strong> contain the same value as the cardholder’s PIV card.</dd>
+</dl>
+
+<p>The FASC-N, card UUID, expiration date, and, if present, cardholder UUID <strong>SHALL NOT</strong> be modified post-issuance.</p>
+
+<p>The expiration date included in the derived CHUID data object <strong>SHALL</strong> be the same as the expiration date of the derived card authentication certificate. It <strong>SHALL</strong> be no later than the expiration date of the content signing certificate. There is no requirement to align the expiration date included in the derived CHUID data object with the expiration date of the CHUID data object on the cardholder’s PIV Card or with other certificates on the derived PIV credential.</p>
+
+<dl>
+  <dt>X.509 Certificate for Derived Card Authentication</dt>
+  <dd>This data object is required for the PKI-CAK authentication mechanism. The read access control rule for the X.509 certificate for derived card authentication and the PKI cryptographic function access rule for the corresponding private key are as described for the X.509 certificate for card authentication in Sec. 3.1.4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> with the exception that they <strong>SHALL</strong> only be accessible via the contactless interface. The card UUID value <strong>SHALL</strong> be the same as the one in the derived CHUID data object.</dd>
+</dl>
+
+<p>The derived PIV application <strong>MAY</strong> contain the following data objects:</p>
+
+<dl>
+  <dt>Derived PIV Secure Messaging Key and Derived Card Verifiable Certificate</dt>
+  <dd>The PKI cryptographic function access rule for the derived PIV secure messaging key and the read access control rule for the derived card verifiable certificate (DCVC) are as described for the secure messaging key specified in Sec. 5.1.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> and Sec. 4.1.5 of <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, respectively, except that they <strong>SHALL</strong> only be accessible via the contactless interface. These data objects are required for the SM-AUTH authentication mechanism. The card UUID in the derived card verifiable certificate <strong>SHALL</strong> be the same as that in the derived CHUID data object.</dd>
+  <dt>Secure Messaging Certificate Signer Object</dt>
+  <dd>The read access control rule for the secure messaging certificate signer object is as described in Sec. 3.3.7 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. This data object is required for the SM-AUTH authentication mechanism.</dd>
+</dl>
+<h4 id="pacs-derived-piv-application-data-object-containers-and-associated-access-rules" data-section="D">
+  
+  
+    PACS Derived PIV Application Data Object Containers and Associated Access Rules <a href="#pacs-derived-piv-application-data-object-containers-and-associated-access-rules" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+
+<p>Section 3.5 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> provides the container IDs and access rules for the PACS data objects for a derived PIV application with the mappings in <a href="/800-157r1/pacs/#table-3">Table 3</a>.</p>
+
+<p latex-ignore="true"><a href="/800-157r1/pacs/#table-3" name="table-3">Table 3. Mapping of PACS data objects</a></p>
+
+<table latex-table="3" latex-caption="Mapping of Data Objects">
+  <thead>
+    <tr>
+      <th>Derived PIV Application Data Object</th>
+      <th>PIV Card Application Data Object</th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X.509 Certificate for Derived Card Authentication</td>
+      <td>X.509 Certificate for Card Authentication</td>
+      <td><a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> Appendix A Table 18</td>
+    </tr>
+    <tr>
+      <td>Derived CHUID Data Object</td>
+      <td>CHUID Data Object</td>
+      <td><a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> Appendix A Table 10</td>
+    </tr>
+    <tr>
+      <td>Derived Card Verifiable Certificate</td>
+      <td>Card Verifiable Certificate</td>
+      <td><a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a> Sec. 4.1.5</td>
+    </tr>
+    <tr>
+      <td>Secure Messaging Certificate Signer</td>
+      <td>Secure Messaging Certificate Signer</td>
+      <td><a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> Appendix A Table 43</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The detailed data model specifications for each of the PACS data objects are the same as the specifications for the corresponding data objects of the PIV Card application cited in <a href="/800-157r1/pacs/#table-3">Table 3</a> above with the exception that, as specified in <a href="#s-d-1-2">Sec. D.1.2</a>, they are accessible only over the contactless interface, except for the Secure Messaging Certificate Signer.</p>
+
+<p>Derived card authentication certificates <strong>SHALL</strong> be issued under the <code class="language-plaintext highlighter-rouge">id-fpki-common-devices</code> or the <code class="language-plaintext highlighter-rouge">id-fpki-common-devicesHardware</code> policy of <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a>. The certificate <strong>SHALL</strong> also include an extended key usage (extKeyUsage) extension asserting <code class="language-plaintext highlighter-rouge">id-PIV-cardAuth</code>. Derived card authentication certificates <strong>SHALL</strong> comply with the <em>Alternative PACS Authenticator Certificate</em> profile in <a href="/800-157r1/references/#ref-PROF">[PROF]</a>.</p>
+
+<p>The expiration date of a derived card authentication certificate is based on the issuer’s certificate policy and the certificate policy specified above. There is no requirement to align the expiration date of a derived card authentication certificate with the expiration date of the card authentication certificate or the expiration of the PIV Card. This allows a derived PIV credential to continue to act as an active credential while the cardholder’s PIV Card is being renewed.</p>
+
+<p>For derived card authentication certificates issued under <code class="language-plaintext highlighter-rouge">id-fpki-common-devices</code>, the derived card authentication key pair <strong>SHALL</strong> be generated within a cryptographic module that has been validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher. If the key pair is generated outside of the authenticator itself, the private key <strong>SHALL</strong> be transferred via an authenticated protected channel as defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>, and the authenticator <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.2.2, including being validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher.</p>
+
+<p>For derived card authentication certificates issued under <code class="language-plaintext highlighter-rouge">id-fpki-common-devicesHardware</code>, the derived card authentication key pair <strong>SHALL</strong> be generated within a cryptographic module that has been validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 2 or higher. If the key pair is generated outside of the authenticator itself, the private key <strong>SHALL</strong> be transferred via an authenticated protected channel as defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>, and the authenticator <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.3.2, including being validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 2 or higher.</p>
+
+<p>If present, the derived PIV secure messaging key pair <strong>SHALL</strong> be generated on the authenticator itself. Its private key <strong>SHALL NOT</strong> be exportable. The authenticator <strong>SHALL</strong> be validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher.</p>
+
+<p>The issuer <strong>SHALL</strong> generate the derived PIV card verifiable certificate, the derived CHUID data object, and the secure messaging certificate signer object (if required) and transfer them to the authenticator.</p>
+<h3 id="derived-piv-pacs-application-data-objects-representation" data-section="D">
+  
+  
+    Derived PIV PACS Application Data Objects Representation <a href="#derived-piv-pacs-application-data-objects-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The ASN.1 object identifiers (OID) and <em>basic encoding rules – tag length value</em> (BER-TLV) tags for the PACS data objects within the derived PIV application are the same as for the corresponding data objects of the PIV Card application (mapped per <a href="/800-157r1/pacs/#table-3">Table 3</a>), as described in Sec. 4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-application-pacs-data-types-and-representation" data-section="D">
+  
+  
+    Derived PIV Application PACS Data Types and Representation <a href="#derived-piv-application-pacs-data-types-and-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>This section describes the data types used in the derived PIV application PACS command interface.</p>
+<h4 id="derived-piv-application-pacs-key-references-and-security-conditions" data-section="D">
+  
+  
+    Derived PIV Application PACS Key References and Security Conditions <a href="#derived-piv-application-pacs-key-references-and-security-conditions" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+
+<p>Key references are assigned to keys and secrets of the derived PIV application. Table 8 of <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a> and Table 4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> define the key reference values that <strong>SHALL</strong> be used on the derived PIV application interfaces with the mappings in <a href="/800-157r1/pacs/#table-4">Table 4</a>.</p>
+
+<p latex-ignore="true"><a href="D-pacs.md#table-4" name="table-4">Table 4. Mapping of PACS key types</a></p>
+
+<table latex-table="4" latex-caption="Mapping of PACS Key Types">
+  <thead>
+    <tr>
+      <th>Derived PIV PACS Key Type</th>
+      <th>PIV Key Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Derived Card Authentication Key</td>
+      <td>Card Authentication Key</td>
+    </tr>
+    <tr>
+      <td>Derived PIV Secure Messaging Key</td>
+      <td>PIV Secure Messaging Key</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The key reference specifications in Sec. 5.1 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> apply to the corresponding keys included in the derived PIV application (mapped per <a href="/800-157r1/pacs/#table-4">Table 4</a>) except that references to “PIV Card application” are replaced with “derived PIV application.”</p>
+<h4 id="derived-piv-application-pacs-cryptographic-algorithm-and-mechanism-identifiers" data-section="D">
+  
+  
+    Derived PIV Application PACS Cryptographic Algorithm and Mechanism Identifiers <a href="#derived-piv-application-pacs-cryptographic-algorithm-and-mechanism-identifiers" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+
+<p>The algorithm identifiers for the cryptographic algorithms that <strong>MAY</strong> be recognized for PACS use on the derived PIV application interfaces are the asymmetric identifiers specified in Table 9 and Table 10 of <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a>. The cryptographic mechanism identifiers that <strong>MAY</strong> be recognized on the derived PIV application interfaces are those specified in Table 5 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h4 id="derived-piv-application-status-words" data-section="D">
+  
+  
+    Derived PIV Application Status Words <a href="#derived-piv-application-status-words" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+
+<p>The status words that <strong>MAY</strong> be returned for PACS use on the derived PIV application command interface are as specified in Sec. 5.6 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-pacs-authentication-mechanisms" data-section="D">
+  
+  
+    Derived PIV PACS Authentication Mechanisms <a href="#derived-piv-pacs-authentication-mechanisms" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The derived PIV application supports the following validation steps for PACS use:</p>
+
+<ul>
+  <li>
+    <p>Credential validation (CredV) is established by verifying the certificates retrieved from the derived PIV application and checking the validity and revocation status of these certificates.</p>
+  </li>
+  <li>
+    <p>As with the PKI-CAK and SM-AUTH authentication mechanisms for the PIV card, derived PIV holder validation (HolderV) for PACS is only established by possession of the derived PIV credential (i.e., these are single-factor authentication mechanisms).</p>
+  </li>
+</ul>
+
+<p>Derived PIV applications that support PACS <strong>SHALL</strong> support PKI-CAK, a cryptographic challenge and response authentication protocol that uses the derived card authentication key as described in Appendix B.1.3 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. Derived PIV applications <strong>MAY</strong> also support SM-AUTH — a key establishment protocol that uses the derived PIV secure messaging key, as described in Appendix B.1.7 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. The following translations apply to the use of these protocols by a derived PIV credential:</p>
+
+<ul>
+  <li>References to “PIV application” are replaced with “derived PIV application.”</li>
+  <li>References to “Card auth certificate” are replaced with “derived card authentication certificate.”</li>
+  <li>References to “SM parameters” are replaced with “derived SM parameters”</li>
+  <li>References to “PIV Card app ID” are replaced with “derived PIV application ID.”</li>
+</ul>
+<h2 id="derived-piv-application-token-command-interface" data-section="D">
+  
+  
+    Derived PIV Application Token Command Interface <a href="#derived-piv-application-token-command-interface" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>This appendix contains the technical specifications for the command interface to the derived PIV application surfaced by the wireless interface to the derived PIV credential for PACS. The command interface for the derived PIV application <strong>SHALL</strong> implement a subset of the card commands supported by the PIV Card application, as described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, which include:</p>
+
+<ul>
+  <li>SELECT</li>
+  <li>GET DATA</li>
+  <li>GENERAL AUTHENTICATE</li>
+  <li>PUT DATA</li>
+  <li>GENERATE ASYMMETRIC KEY PAIR</li>
+</ul>
+
+<p>The specifications for the token command interface <strong>SHALL</strong> be the same as the specifications for the corresponding card edge commands for a PIV Card, as described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, except for the following deviations:</p>
+
+<ul>
+  <li>References to “PIV Card application” are replaced with “derived PIV application.”</li>
+  <li>References to “PIV data objects” are replaced with “derived PIV data objects.”</li>
+  <li>References to “card authentication key” are replaced with “derived card authentication key.”</li>
+  <li>In Appendix A:
+    <ul>
+      <li>References to “PIV Card application administrator” are replaced with “derived PIV application administrator.”</li>
+      <li>References to “card management key” are replaced with “derived PIV token management key.”</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The token platform <strong>SHALL</strong> support a default selected application, which is the application chosen immediately following a cold or warm reset. This default application <strong>MAY</strong> be the derived PIV application or another application.</p>
+<h3 id="authentication-of-an-individual-for-pacs" data-section="D">
+  
+  
+    Authentication of an Individual for PACS <a href="#authentication-of-an-individual-for-pacs" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+
+<p>The two authentication mechanisms for PACS are PKI-CAK and SM-AUTH, which rely only on possession of the derived PIV credential for holder validation (HolderV). Therefore, an activation secret is not used for enhanced holder validation.</p>
+<h2 id="invalidation-of-pacs-derived-piv" data-section="D">
+  
+  
+    Invalidation of PACS Derived PIV <a href="#invalidation-of-pacs-derived-piv" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+
+<p>A derived PIV credential that is used for physical access <strong>SHALL</strong> be invalidated when the associated PIV identity account is terminated or when the PACS credential or the device on which it resides has been lost or compromised. The IdMS <strong>SHALL</strong> revoke the card authentication certificate associated with the lost or compromised device or all such certificates associated with the terminated PIV identity account. The home agency IdMS <strong>SHOULD</strong> direct all physical access control systems known to use the credential to remove it from their access control lists.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:distinct" role="doc-endnote">
+      <p>This will generally require multiple entries for the cardholder on the access control list — one for each of their derived PIV credential modules and the PIV card. <a href="#fnref:distinct" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+<h1 id="s-e" data-section="E">
+  
+  
+    Glossary <a href="#s-e" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This appendix is informative.</em></p>
+
+<p>Selected terms used in this guideline are defined below. All other significant technical terms used within this document are defined in other key documents, including <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a>, <a href="/800-157r1/references/#ref-SP-800-63A">[SP800-63A]</a>, <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>, <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, and <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>.</p>
+
+<dl>
+  <dt>applicant</dt>
+  <dd>A PIV cardholder who has applied for but has yet to be issued a derived PIV credential.</dd>
+  <dt>derived PIV application</dt>
+  <dd>A standardized application based on the PIV Card’s PIV application that resides on a removable or wireless cryptographic token. It hosts PKI-based derived PIV credentials and associated mandatory and optional elements.</dd>
+  <dt>derived PIV credential module</dt>
+  <dd>A collection of objects (e.g., certificates, keys, etc.) that provide derived PIV functionality in a derived PIV application or other device.</dd>
+  <dt>home agency</dt>
+  <dd>The government agency responsible for maintaining the PIV identity account and issuing a PIV Card. While another agency may sometimes perform the enrollment and identity proofing process, the home agency is responsible for monitoring ongoing eligibility and initiating termination if appropriate.</dd>
+  <dt>home agency IdMS</dt>
+  <dd>An identity management system operated by the home agency or on their behalf by an authorized third party or shared service provider that houses the PIV identity accounts of cardholders.</dd>
+  <dt>PIV identity account</dt>
+  <dd>The logical record that contains credentialing information for a given PIV cardholder. This is stored within the <em>home agency IdMS</em> and includes PIV enrollment data, cardholder identity attributes, information regarding the cardholder’s PIV card, and any derived PIV credentials bound to the account.</dd>
+  <dt>PKI-based derived PIV credential</dt>
+  <dd>An X.509 derived PIV authentication certificate, which is issued in accordance with the requirements specified in this document, where one or more X.509 certificates on the applicant’s PIV Card serve as the original credential. The derived PIV credential is an additional common identity credential under HSPD-12 and FIPS 201 that a federal department or agency issues.</dd>
+  <dt>non-PKI-based derived PIV credential</dt>
+  <dd>An authenticator (as defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>) that has been bound to a PIV identity account at a subscriber’s home agency that does not use the PKI-based authentication mechanisms described in <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a>. A non-PKI-based derived PIV credential bound to the subscriber’s PIV identity account can be used for federated authentication via the cardholder’s home agency IdMS.</dd>
+  <dt>subscriber</dt>
+  <dd>A PIV cardholder to whom a derived PIV credential has been issued.</dd>
+  <dt>verifier</dt>
+  <dd>An entity that verifies the claimant’s identity by verifying the claimant’s possession and control of one or more authenticators using an authentication protocol. To do this, the verifier needs to confirm the authenticators’ binding with the subscriber account and check that the subscriber account is active.</dd>
+</dl>
+
+<h1 id="s-f" data-section="F">
+  
+  
+    Acronyms and Abbreviations <a href="#s-f" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This appendix is informative.</em></p>
+
+<p>Selected abbreviations used in this guideline are defined below.</p>
+
+<dl>
+  <dt>AAL</dt>
+  <dd>Authentication Assurance Level</dd>
+  <dt>AID</dt>
+  <dd>Application Identifier</dd>
+  <dt>ASCII</dt>
+  <dd>American Standard Code for Information Interchange</dd>
+  <dt>CA</dt>
+  <dd>Certificate Authority</dd>
+  <dt>CHUID</dt>
+  <dd>Cardholder Unique Identifier</dd>
+  <dt>ICC</dt>
+  <dd>Integrated Circuit Card</dd>
+  <dt>FIPS</dt>
+  <dd>Federal Information Processing Standard</dd>
+  <dt>OCC</dt>
+  <dd>On-Card (biometric) Comparison</dd>
+  <dt>PIN</dt>
+  <dd>Personal Identification Number</dd>
+  <dt>PIV</dt>
+  <dd>Personal Identity Verification</dd>
+  <dt>PKI</dt>
+  <dd>Public Key Infrastructure</dd>
+  <dt>TLS</dt>
+  <dd>Transport Layer Security</dd>
+  <dt>VCI</dt>
+  <dd>Virtual Contact Interface</dd>
+</dl>
+
+<h1 id="s-g" data-section="G">
+  
+  
+    Change Log <a href="#s-g" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+
+<p><em>This appendix is informative.</em> It provides an overview of the changes to SP 800-157 since its initial release.</p>
+
+<ul>
+  <li>Throughout — Removed restrictions to only use derived PIV credentials on mobile devices</li>
+  <li>Sections 1.1, 1.2 — Allowed binding of non-PKI-based derived PIV credentials at AAL2 and AAL3</li>
+  <li>Sections 1.2, 2.1, 2.2, 3.1, 3.2, C — Changed assurance levels from LOA to AAL</li>
+  <li>Sections 1.4, 2.2 — Removed relationship to obsolete OMB memoranda</li>
+  <li>Section 2.1 — Added life cycle of non-PKI-based derived PIV credentials</li>
+  <li>Sections 2.2.1, 2.2.2 — Added detail on issuance for PKI and non-PKI-based derived PIV credentials</li>
+  <li>Sections 2.3.1, 2.3.2 — Added detail on maintenance for PKI and non-PKI-based derived PIV credentials</li>
+  <li>Sections 2.4, 2.4.1, 2.4.2 — Added invalidation detail, replacing linkage with PIV Card</li>
+  <li>Section 3.1, 3.2 — Reorganized sections into PKI and non-PKI-based derived PIV credential requirements</li>
+  <li>Section 3.1.3 — Removed specific physical details for authenticators</li>
+  <li>Sections 3.1.4, 3.2.3 — Referenced SP 800-63B for activation requirements</li>
+  <li>Section 3.3 — Added reference to binding requirements in SP 800-63B</li>
+  <li>Appendix B.1.2, B.1.3 — Added secure messaging and VCI capabilities for removable and wireless authenticators</li>
+  <li>Appendix C.1 — Added reference to issuance requirements in SP 800-63B</li>
+  <li>Appendix C.2 — Updated existing PIV credential issuance example and added example of issuance of non-PKI-based derived PIV credentials</li>
+  <li>Appendix D — New appendix on the use of derived PIV credentials with physical access control systems</li>
+</ul>
+
+
+
+
+
+
+  </div>
+</div>
+<footer role="contentInfo" class="site-footer">
+  <div class="section-container">
+    <div class="section-content">
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function loadSearch() {
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/800-157r1/search.json'
+        });
+    }
+    $(function() {
+      
+      // Convert all links to on-page within document in collapsed view
+      $('.container a[href^="/800-157r1/"], .container a[href^="../"]').filter('a[href*="#"]').each(function(i, el) {
+          var $el = $(el);
+          var newPath = $el.attr('href').replace(/(.*)(\#.+)/, "$2");
+          //console.log('1: ' + $el.attr('href') + ' :: ' + newPath);
+          $el.attr('href', newPath);
+      });
+      // Convert all cross-document links when in collapsed view
+      $('.container a[href^="/800-157r1/"]').each(function(i, el) {
+          var $el = $(el);
+          var newPath = $el.attr('href').replace(new RegExp('(/800-157r1)/([^/]+)(/.*)?/(#.*)?'), '$1/$2.html$4');
+          //console.log('2: ' + $el.attr('href') + ' :: ' + newPath);
+          $el.attr('href', newPath);
+      });
+      
+      // highlight normative language by adding classes
+      $('strong').filter(':contains("SHALL"), :contains("SHALL NOT"), :contains("SHOULD"), :contains("SHOULD NOT"), :contains("MAY"), :contains("NEED NOT"), :contains("CAN"), :contains("CANNOT"), :contains("CAPITALS")').each(function(i, el) {
+        var $el;
+        $el = $(el);
+        $el.addClass('normative');
+      });
+      // highlight the target
+      $('a:target').parent().addClass('target');
+      $(':target').addClass('target');
+      $(window).on('hashchange', function(e) {
+        $('.target').removeClass('target');
+        $('a:target').parent().addClass('target');
+        $(':target').addClass('target');
+      });
+    });
+</script>
+
+
+</body>
+</html>

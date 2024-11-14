@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="canonical" href="/800-157r1/requirements/">
+
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=mml&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script> -->
+    <!-- DAP Analytics -->
+    <script type="text/javascript" id="_fed_an_ua_tag"
+            src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript"></script>
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+	<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/800-157r1/static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTStyle.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTPages.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <title>Technical Requirements</title>
+    <meta property="og:title" content="Technical Requirements"/>
+    
+
+    
+    <meta name="description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials">
+    <meta property="og:description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials"/>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-left" role="navigation">
+	<ul class="nav navbar-nav">
+      <li id="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onFocus="loadSearch()">
+        <ul id="results-container"></ul>
+      </li>
+      
+        
+        
+        
+        <li class="">
+          
+              <a href="/800-157r1/">Home</a>
+          
+          
+          
+          
+          
+        </li>
+      
+        
+        
+        
+        <li class="active">
+          
+              <a href="/800-157r1/introduction/">SP 800-157r1</a>
+          
+          
+          
+        
+            
+            
+            
+            <ul class="subnav">
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abstract/">Abstract</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/introduction/"><span class="section">1</span>Introduction</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/lifecycle/"><span class="section">2</span>Lifecycle</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class="active"><a href="/800-157r1/requirements/"><span class="section">3</span>Requirements</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/references/">References</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/keys/"><span class="section">A</span>Keys</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/model/"><span class="section">B</span>Model</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/examples/"><span class="section">C</span>Examples</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/pacs/"><span class="section">D</span>Physical Access</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/glossary/"><span class="section">E</span>Glossary</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abbreviations/"><span class="section">F</span>Abbreviations</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/changelog/"><span class="section">G</span>Change Log</a></li>
+                
+              
+              
+
+            
+          
+            </ul>
+          
+          
+          
+        </li>
+      
+      
+      
+  </ul>
+
+</nav>
+
+
+<div class="page-switch">
+
+View this document as: <a href="/800-157r1/sp800-157.html">a single page</a> | <b>multiple pages</b>.
+
+</div>
+
+<div class="container">
+  <div class="row">
+
+
+
+
+
+  
+
+  
+
+<h1 id="s-3" data-section="3">
+  
+  
+    Technical Requirements <a href="#s-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+    
+
+<p><em>This section is normative.</em></p>
+
+<p>This section describes technical requirements for PKI-based and non-PKI-based derived PIV credentials and associated authenticators.</p>
+
+<p>While the following sections focus on credential and authenticator requirements, the verifier is required to meet the corresponding verifier requirements in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.</p>
+<h2 id="s-3-1" data-section="3">
+  
+  
+    PKI-Based Derived PIV Credentials <a href="#s-3-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>A PKI-based derived PIV credential is a derived PIV authentication certificate, which is an X.509 public key certificate that has been issued in accordance with the requirements of this document and <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a>. All derived PIV credentials created under previous revisions of these guidelines are PKI-based and remain valid implementations under this SP 800-157 revision. <a href="/800-157r1/model/#s-b">Appendix B</a> describes additional requirements for removable or wireless PKI-based derived PIV credentials that are used for logical access.</p>
+
+<p>Authentication using PKI-based derived PIV credentials <strong>SHALL</strong> include a check to determine that the authentication certificate is valid and current (e.g., that the certificate is unexpired and not revoked).</p>
+<h3 id="s-3-1-1" data-section="3">
+  
+  
+    Certificate Policies for PKI-Based Derived PIV Credentials <a href="#s-3-1-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>Derived PIV authentication certificates <strong>SHALL</strong> be issued under either the <code class="language-plaintext highlighter-rouge">id-fpki-common-derived-pivAuth-hardware</code> policy (satisfying <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> AAL3) or the <code class="language-plaintext highlighter-rouge">id-fpki-common-derived-pivAuth</code> policy (satisfying AAL2) of <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a>. All derived PIV credentials <strong>SHALL</strong> be deemed to satisfy <a href="/800-157r1/references/#ref-SP-800-63A">[SP800-63A]</a> IAL3 since that is the identity proofing and issuance level associated with the PIV Card and bound to the PIV identity account.</p>
+
+<p>Derived PIV authentication certificates <strong>SHALL</strong> comply with the <em>Derived PIV Authentication Certificate</em> profile in <a href="/800-157r1/references/#ref-PROF">[PROF]</a>.</p>
+
+<p>The expiration date of a derived PIV authentication certificate is based on the issuer’s certificate policy and the certificate policy specified above. There is no requirement to align the expiration date of a derived PIV authentication certificate with the expiration date of the PIV authentication certificate or the expiration of the PIV Card. This allows a derived PIV credential to continue to act as an active credential while the cardholder’s PIV Card is being renewed.</p>
+<h3 id="s-3-1-2" data-section="3">
+  
+  
+    Cryptographic Specifications <a href="#s-3-1-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The cryptographic algorithm and key size requirements for the derived PIV authentication certificates and
+private keys are the same as the requirements for the PIV authentication certificate and private key, as
+specified in <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a>.</p>
+
+<p>For derived PIV authentication certificates issued under <code class="language-plaintext highlighter-rouge">id-fpki-common-pivAuth-derived-hardware</code>
+(AAL3), the derived PIV authentication key pair <strong>SHALL</strong> be generated within a cryptographic
+module that meets the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.3.2, including being validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 2 or higher with Level 3 physical security to
+protect the derived PIV authentication private key while in storage and not permitting export
+of the private key.</p>
+
+<p>For derived PIV authentication certificates issued under <code class="language-plaintext highlighter-rouge">id-fpki-common-pivAuth-derived</code> (AAL2), the
+derived PIV authentication key pair <strong>SHALL</strong> be generated within a cryptographic module that has been
+validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher. If the key pair is generated outside of the authenticator itself, the private key <strong>SHALL</strong> be transferred via an authenticated protected channel as defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>, and the authenticator <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.2.2, including being validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher.</p>
+<h3 id="s-3-1-3" data-section="3">
+  
+  
+    Allowable Authenticator Types <a href="#s-3-1-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>A multi-factor cryptographic authenticator as specified in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.7.1 <strong>SHALL</strong> be used for PKI-based derived PIV authentication. The authenticator <strong>SHALL</strong> be phishing-resistant, as described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.5. Authenticators used at AAL3 <strong>SHALL</strong> meet the additional requirements described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.3.</p>
+<h3 id="s-3-1-4" data-section="3">
+  
+  
+    Activation Data <a href="#s-3-1-4" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>Activation of PKI-based derived PIV authenticators using an activation secret <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.10. Activation using a biometric characteristic <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.3.</p>
+
+<p>If the activation secret or the biometric activation factor needs to be changed, entry of the current activation secret <strong>SHALL</strong> be required to change the value. The authenticator <strong>MAY</strong> support a PIN unblocking key (PUK) that can be used by the home agency IdMS to unblock or reset the activation secret or biometric activation factor if it has been forgotten or the permitted number of consecutive wrong attempts has been reached. If reset using PUK is unavailable and the authenticator cannot be successfully activated, the authenticator <strong>SHALL</strong> be invalidated as described in <a href="/800-157r1/lifecycle/#s-2-4">Sec. 2.4</a>. A new derived PIV credential <strong>MAY</strong> then be issued.</p>
+<h2 id="s-3-2" data-section="3">
+  
+  
+    Non-PKI-Based Derived PIV Credentials <a href="#s-3-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>Non-PKI-based credentials <strong>SHALL</strong> only be used to authenticate to verifiers that are authorized by the home agency of the associated PIV Card. All verifiers of non-PKI-based derived PIV credentials <strong>SHALL</strong> access the home agency IdMS in order to determine the current validity of the associated PIV identity account. Non-PKI derived PIV credentials can be used elsewhere through federation with an IdP able to access the home agency IdMS, as described in <a href="/800-157r1/references/#ref-SP-800-217">[SP800-217]</a>.</p>
+<h3 id="s-3-2-1" data-section="3">
+  
+  
+    Allowable Authenticator Types <a href="#s-3-2-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>Multi-factor or single-factor cryptographic authenticators as specified in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.7.1 and Sec. 3.1.6.1, respectively, <strong>SHALL</strong> be used for non-PKI-based derived PIV authentication. Cryptographic authenticators <strong>SHALL</strong> be phishing-resistant as described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.5. Examples of suitable authentication processes include client-authenticated TLS and WebAuthn <a href="/800-157r1/references/#ref-WebAuthn">[WebAuthn]</a>. Except for physical access applications specified in <a href="/800-157r1/pacs/#s-d">Appendix D</a>, all single-factor authenticators <strong>SHALL</strong> be used in conjunction with a password that meets the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1.1. Authenticators used at AAL3 <strong>SHALL</strong> meet the additional requirements described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.3.</p>
+<h3 id="s-3-2-2" data-section="3">
+  
+  
+    Cryptographic Specifications <a href="#s-3-2-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>Authenticators used as non-PKI-based derived PIV credentials <strong>SHALL</strong> meet the cryptographic requirements specified in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.1 for the corresponding authenticator type.</p>
+<h3 id="s-3-2-3" data-section="3">
+  
+  
+    Activation Data <a href="#s-3-2-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>Activation of the derived PIV credential using an activation secret <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.10. Activation using a biometric characteristic <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.3.</p>
+
+<p>If the activation secret or the biometric activation factor needs to be changed, entry of the current activation secret <strong>SHALL</strong> be required to change the value. If the activation secret has been forgotten or the permitted number of consecutive wrong attempts has been reached, centralized management by the home agency IdMS <strong>SHALL</strong> be required to reset the activation secret and attempt counter. If centralized reset is unavailable, the authenticator <strong>SHALL</strong> be reset and will requires re-binding to the PIV identity account, as described in <a href="/800-157r1/lifecycle/#s-2-2">Sec. 2.2</a>.</p>
+
+
+  
+
+
+
+  </div>
+</div>
+<footer role="contentInfo" class="site-footer">
+  <div class="section-container">
+    <div class="section-content">
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function loadSearch() {
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/800-157r1/search.json'
+        });
+    }
+    $(function() {
+      
+      // highlight normative language by adding classes
+      $('strong').filter(':contains("SHALL"), :contains("SHALL NOT"), :contains("SHOULD"), :contains("SHOULD NOT"), :contains("MAY"), :contains("NEED NOT"), :contains("CAN"), :contains("CANNOT"), :contains("CAPITALS")').each(function(i, el) {
+        var $el;
+        $el = $(el);
+        $el.addClass('normative');
+      });
+      // highlight the target
+      $('a:target').parent().addClass('target');
+      $(':target').addClass('target');
+      $(window).on('hashchange', function(e) {
+        $('.target').removeClass('target');
+        $('a:target').parent().addClass('target');
+        $(':target').addClass('target');
+      });
+    });
+</script>
+
+
+</body>
+</html>

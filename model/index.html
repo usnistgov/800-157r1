@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="canonical" href="/800-157r1/model/">
+
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=mml&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script> -->
+    <!-- DAP Analytics -->
+    <script type="text/javascript" id="_fed_an_ua_tag"
+            src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript"></script>
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+	<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/800-157r1/static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTStyle.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTPages.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <title>Data Model and Interfaces for Removable PKI-based Cryptographic Authenticators</title>
+    <meta property="og:title" content="Data Model and Interfaces for Removable PKI-based Cryptographic Authenticators"/>
+    
+
+    
+    <meta name="description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials">
+    <meta property="og:description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials"/>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-left" role="navigation">
+	<ul class="nav navbar-nav">
+      <li id="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onFocus="loadSearch()">
+        <ul id="results-container"></ul>
+      </li>
+      
+        
+        
+        
+        <li class="">
+          
+              <a href="/800-157r1/">Home</a>
+          
+          
+          
+          
+          
+        </li>
+      
+        
+        
+        
+        <li class="active">
+          
+              <a href="/800-157r1/introduction/">SP 800-157r1</a>
+          
+          
+          
+        
+            
+            
+            
+            <ul class="subnav">
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abstract/">Abstract</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/introduction/"><span class="section">1</span>Introduction</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/lifecycle/"><span class="section">2</span>Lifecycle</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/requirements/"><span class="section">3</span>Requirements</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/references/">References</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/keys/"><span class="section">A</span>Keys</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class="active"><a href="/800-157r1/model/"><span class="section">B</span>Model</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/examples/"><span class="section">C</span>Examples</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/pacs/"><span class="section">D</span>Physical Access</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/glossary/"><span class="section">E</span>Glossary</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abbreviations/"><span class="section">F</span>Abbreviations</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/changelog/"><span class="section">G</span>Change Log</a></li>
+                
+              
+              
+
+            
+          
+            </ul>
+          
+          
+          
+        </li>
+      
+      
+      
+  </ul>
+
+</nav>
+
+
+<div class="page-switch">
+
+View this document as: <a href="/800-157r1/sp800-157.html">a single page</a> | <b>multiple pages</b>.
+
+</div>
+
+<div class="container">
+  <div class="row">
+
+
+
+
+
+  
+
+  
+
+<h1 id="s-b" data-section="B">
+  
+  
+    Data Model and Interfaces for Removable or Wireless PKI-Based Cryptographic Authenticators <a href="#s-b" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+    
+
+<p><em>This appendix is normative.</em></p>
+
+<p>This appendix provides data model and interface requirements for PKI-based derived PIV applications implemented on removable or wireless cryptographic authenticators. Use of wireless cryptographic authenticators in this appendix is applicable to logical access. Wireless authenticators for physical access (e.g., facility access) are specified in <a href="/800-157r1/pacs/#s-d">Appendix D</a>.</p>
+<h2 id="derived-piv-application-data-model-and-representation" data-section="B">
+  
+  
+    Derived PIV Application Data Model and Representation <a href="#derived-piv-application-data-model-and-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The data model and representation requirements for derived PIV applications are based on the requirements for PIV Card applications, as described in <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. Test requirements and test assertions for testing the derived PIV application and associated derived PIV data objects implemented on removable hardware tokens are specified in <a href="/800-157r1/references/#ref-SP-800-166">[SP800-166]</a>, <em>Derived PIV Application and Data Model Test Guidelines</em>. The specifications for the mandatory and optional data objects listed below are the same as the specifications for the corresponding data objects on a PIV Card application, as described in <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-application-identifier" data-section="B">
+  
+  
+    Derived PIV Application Identifier <a href="#derived-piv-application-identifier" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The PIV application ID (AID) <strong>SHOULD</strong> be used to maximize interoperability with PIV Cards. For reference, that application ID is (in hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08      00 00 10 00       01 00
+</code></pre></div></div>
+
+<p>Alternatively, the derived PIV application identifier defined in the previous edition of this guideline <strong>MAY</strong> be used. This application ID is deprecated and may not be included in future editions of this guideline. That application ID is (in hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08      00 00 20 00       01 00
+</code></pre></div></div>
+
+<p>No other application ID <strong>SHALL</strong> be used.</p>
+
+<p>The PIV or derived PIV application can be selected as the current application on the removable cryptographic token by providing the full AID listed above or the right-truncated version, as follows (hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08       00 00 x0 00
+</code></pre></div></div>
+
+<p>where ‘x’ is either 1 for the PIV application or 2 for the derived PIV application.</p>
+<h3 id="s-b-1-2" data-section="B">
+  
+  
+    Derived PIV Application Data Model Elements <a href="#s-b-1-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The derived PIV application <strong>SHALL</strong> contain the following mandatory interoperable data object:</p>
+
+<dl>
+  <dt>X.509 Certificate for Derived PIV Authentication</dt>
+  <dd>The read access control rule for the X.509 certificate for derived PIV authentication and the PKI cryptographic function access rule for the corresponding private key are as described for the X.509 certificate for PIV authentication in Sec. 3.1.3 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+</dl>
+
+<p>The following data objects <strong>MAY</strong> also be present:</p>
+
+<dl>
+  <dt>X.509 Certificate for Digital Signature</dt>
+  <dd>The read access control rule for the X.509 certificate for digital signature and the PKI cryptographic function access rule for the corresponding private key are as described in Sec. 3.2.1 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+  <dt>X.509 Certificate for Key Management</dt>
+  <dd>The read access control rule for the X.509 certificate for key management and the PKI cryptographic function access rule for the corresponding private key are as described in Sec. 3.2.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+  <dt>Discovery Object</dt>
+  <dd>The requirements for the discovery object are as described in Sec. 3.3.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, except for the following:
+
+    <ul>
+      <li>References to “PIV card application AID” are replaced by “derived PIV application AID.”</li>
+      <li>References to “PIV card application PIN” are replaced by “derived PIV activation secret.”</li>
+      <li>The first byte of the PIN usage policy <strong>SHALL</strong> be set to <code class="language-plaintext highlighter-rouge">0x40</code> to indicate that the virtual contact interface (VCI) is not implemented, <code class="language-plaintext highlighter-rouge">0x48</code> to indicate that a pairing code is required to establish a VCI, or <code class="language-plaintext highlighter-rouge">0x4C</code> to indicate that no pairing code is required to establish a VCI. This also means that neither the global PIN nor the on-card biometric comparison (OCC) satisfies the access control rules for command execution and data object access within the derived PIV application.</li>
+    </ul>
+  </dd>
+  <dt>Key History Object</dt>
+  <dd>Up to 20 retired key management private keys <strong>MAY</strong> be stored in the derived PIV application. The Key History Object <strong>SHALL</strong> be present in the derived PIV application if the derived PIV application contains any retired key management private keys but <strong>MAY</strong> be present even if no such keys are present in the derived PIV application. The requirements for the key history object are as described in Sec. 3.3.3 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, except for the following:
+
+    <ul>
+      <li>References to <em>keysWithOnCardCerts</em> <strong>SHOULD</strong> be interpreted as keys for which the corresponding certificate is populated within the derived PIV application.</li>
+      <li>References to <em>keysWithOffCardCerts</em> <strong>SHOULD</strong> be interpreted as keys for which the corresponding certificate is not populated within the derived PIV application.</li>
+      <li>References to <em>offCardCertURL</em> <strong>SHOULD</strong> be interpreted as a URL that points to a file containing the certificates that correspond to all of the retired key management private keys within the derived PIV application, including those for which the corresponding certificate is stored within the derived PIV application.</li>
+    </ul>
+  </dd>
+  <dt>Retired X.509 Certificates for Key Management</dt>
+  <dd>The read access control rules for the retired X.509 certificates for key management and the PKI cryptographic function access rules for corresponding private keys are as described in Sec. 3.3.4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+  <dt>Security Object</dt>
+  <dd>The security object <strong>SHALL</strong> be present in the derived PIV application if the discovery object, the key history object, or the optional pairing code reference data container is present. The requirements for the security object are as described in Sec. 3.1.7 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, except for the following:
+
+    <ul>
+      <li>The security object for a derived PIV application is signed using a private key whose corresponding public key is contained in a PIV content signing certificate that satisfies the requirements for certificates used to verify signatures on cardholder unique identifiers (CHUID), as specified in Sec. 4.2.1 of <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a>.</li>
+      <li>The signature field of the Security Object, tag <code class="language-plaintext highlighter-rouge">0xBB</code>, <strong>SHALL</strong> include the derived PIV credential issuer’s certificate.</li>
+      <li>The security object <strong>SHALL</strong> include all unsigned data objects (i.e., the discovery object, the key history object, and the pairing code reference data container) within the derived PIV application.</li>
+    </ul>
+  </dd>
+  <dt>Secure Messaging Certificate Signer</dt>
+  <dd>Derived PIV credential applications that support the virtual contact interface (VCI) capability <strong>SHALL</strong> include the secure messaging certificate signer object described in Sec. 3.3.7 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+  <dt>Pairing Code Reference Data Container</dt>
+  <dd>Derived PIV credential applications that support the virtual contact interface (VCI) using a pairing code <strong>SHALL</strong> include the pairing code reference data container described in Sec. 3.3.8 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</dd>
+</dl>
+
+<div latex-literal="true" class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\clearpage
+</code></pre></div></div>
+<h4 id="derived-piv-application-data-object-containers-and-associated-access-rules" data-section="B">
+  
+  
+    Derived PIV Application Data Object Containers and Associated Access Rules <a href="#derived-piv-application-data-object-containers-and-associated-access-rules" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<p>Section 3.5 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> provides the container IDs and access rules for the mandatory and optional data objects for a derived PIV application with the following mappings:</p>
+
+<p latex-ignore="true"><a href="/800-157r1/model/#table-1" name="table-1">Table 1. Mapping of Data Objects</a></p>
+
+<table latex-table="1" latex-caption="Mapping of Data Objects">
+  <thead>
+    <tr>
+      <th>Derived PIV Application Data Object</th>
+      <th>PIV Card Application Data Object</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X.509 Certificate for Derived PIV Authentication</td>
+      <td>X.509 Certificate for PIV Authentication</td>
+    </tr>
+    <tr>
+      <td>Security Object</td>
+      <td>Security Object</td>
+    </tr>
+    <tr>
+      <td>X.509 Certificate for Digital Signature</td>
+      <td>X.509 Certificate for Digital Signature</td>
+    </tr>
+    <tr>
+      <td>X.509 Certificate for Key Management</td>
+      <td>X.509 Certificate for Key Management</td>
+    </tr>
+    <tr>
+      <td>Discovery Object</td>
+      <td>Discovery Object</td>
+    </tr>
+    <tr>
+      <td>Key History Object</td>
+      <td>Key History Object</td>
+    </tr>
+    <tr>
+      <td>Retired X.509 Certificate for Key Management [1:20]</td>
+      <td>Retired X.509 Certificate for Key Management [1:20]</td>
+    </tr>
+    <tr>
+      <td>Secure Messaging Certificate Signer</td>
+      <td>Secure Messaging Certificate Signer</td>
+    </tr>
+    <tr>
+      <td>Pairing Code Reference Data Container</td>
+      <td>Pairing Code Reference Data Container</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The detailed data model specifications for each of the data objects of the derived PIV application are the same as the specifications for the corresponding data objects (mapped per <a href="/800-157r1/model/#table-1">Table 1</a>) of the PIV Card application as described in Appendix A of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, except for the following:</p>
+
+<ul>
+  <li>
+    <p>The security object for the derived PIV application is optional. It is required if the optional discovery object, the optional key history object, or the optional pairing code reference data container is present.</p>
+  </li>
+  <li>
+    <p>The minimum capacity for the security object container <strong>SHALL</strong> be 3000 bytes to allow space for the derived PIV credential issuer’s certificate.</p>
+  </li>
+</ul>
+<h3 id="derived-piv-application-data-objects-representation" data-section="B">
+  
+  
+    Derived PIV Application Data Objects Representation <a href="#derived-piv-application-data-objects-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The ASN.1 object identifiers (OID) and “basic encoding rules – tag length value” (BER-TLV) tags for the mandatory and optional data objects within the derived PIV application are the same as for the corresponding data objects (mapped per <a href="/800-157r1/model/#table-1">Table 1</a>) of the PIV Card application, as described in Sec. 4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-application-data-types-and-their-representation" data-section="B">
+  
+  
+    Derived PIV Application Data Types and Their Representation <a href="#derived-piv-application-data-types-and-their-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>This appendix describes the data types used in the derived PIV application command interface.</p>
+<h4 id="derived-piv-application-key-references-and-security-conditions-of-use" data-section="B">
+  
+  
+    Derived PIV Application Key References and Security Conditions of Use <a href="#derived-piv-application-key-references-and-security-conditions-of-use" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<p>Key references are assigned to keys and secrets of the derived PIV application. Table 8 of <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a> and Table 4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> define the key reference values that <strong>SHALL</strong> be used on the derived PIV application interfaces with the following mappings:</p>
+
+<p latex-ignore="true"><a href="/800-157r1/model/#table-2" name="table-2">Table 2. Mapping of Key Types</a></p>
+
+<table latex-table="2" latex-caption="Mapping of Key Types">
+  <thead>
+    <tr>
+      <th>Derived PIV Key Type</th>
+      <th>PIV Key Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Derived PIV Activation Secret</td>
+      <td>PIV Card Application PIN</td>
+    </tr>
+    <tr>
+      <td>Activation Secret Unblocking Key</td>
+      <td>PIN Unblocking Key</td>
+    </tr>
+    <tr>
+      <td>Derived PIV Authentication Key</td>
+      <td>PIV Authentication Key</td>
+    </tr>
+    <tr>
+      <td>Derived PIV Token Management Key</td>
+      <td>Card Management Key</td>
+    </tr>
+    <tr>
+      <td>Digital Signature Key</td>
+      <td>Digital Signature Key</td>
+    </tr>
+    <tr>
+      <td>Key Management Key</td>
+      <td>Key Management Key</td>
+    </tr>
+    <tr>
+      <td>Retired Key Management Key</td>
+      <td>Retired Key Management Key</td>
+    </tr>
+    <tr>
+      <td>Derived PIV Secure Messaging Key</td>
+      <td>PIV Secure Messaging Key</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The key reference specifications in Sec. 5.1 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> apply to the corresponding keys included in the derived PIV application (mapped per <a href="/800-157r1/model/#table-2">Table 2</a>), except for the following:</p>
+
+<ul>
+  <li>
+    <p>References to “PIV Card application” are replaced with “derived PIV application.”</p>
+  </li>
+  <li>
+    <p>References in the “Security Condition for Use” column to “PIN or OCC” are replaced with “derived PIV activation secret.”</p>
+  </li>
+</ul>
+<h4 id="derived-piv-application-cryptographic-algorithm-and-mechanism-identifiers" data-section="B">
+  
+  
+    Derived PIV Application Cryptographic Algorithm and Mechanism Identifiers <a href="#derived-piv-application-cryptographic-algorithm-and-mechanism-identifiers" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<p>The algorithm identifiers for the cryptographic algorithms that <strong>MAY</strong> be recognized on the derived PIV application interfaces are the symmetric and asymmetric identifiers specified in Table 9 and Table 10 of <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a>. The cryptographic mechanism identifiers that <strong>MAY</strong> be recognized on the derived PIV application interfaces are those specified in Table 5 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h4 id="derived-piv-application-status-words" data-section="B">
+  
+  
+    Derived PIV Application Status Words <a href="#derived-piv-application-status-words" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<p>The status words that <strong>MAY</strong> be returned on the derived PIV application command interface are as specified in Sec. 5.6 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-authentication-mechanisms" data-section="B">
+  
+  
+    Derived PIV Authentication Mechanisms <a href="#derived-piv-authentication-mechanisms" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The derived PIV application supports the following validation steps:</p>
+
+<ul>
+  <li>
+    <p>Credential validation (CredV) is established by verifying the certificates retrieved from the derived PIV application and checking the validity and revocation status of these certificates.</p>
+  </li>
+  <li>
+    <p>Derived PIV application holder validation (HolderV) is established when the authenticator holder proves knowledge of the derived PIV activation secret associated with the derived PIV credential that contains valid and unrevoked certificates.</p>
+  </li>
+</ul>
+
+<p>The derived PIV application facilitates a single authentication mechanism, which is a cryptographic challenge and response authentication protocol that uses the derived PIV authentication private key as described in Appendix B.1.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> with the following translations:</p>
+
+<ul>
+  <li>References to “PIV application” are replaced with “derived PIV application.”</li>
+  <li>References to “PIV auth certificate” are replaced with “derived PIV authentication certificate.”</li>
+  <li>References to “PIV Card app ID” are replaced with “derived PIV application ID.”</li>
+</ul>
+
+<p>Authentication can also be performed wirelessly over a virtual contact interface (VCI) if a VCI has been established with the derived PIV application.</p>
+<h2 id="derived-piv-application-token-command-interface" data-section="B">
+  
+  
+    Derived PIV Application Token Command Interface <a href="#derived-piv-application-token-command-interface" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>This appendix contains the technical specifications for the command interface to the derived PIV application surfaced by the card edge of the integrated circuit card (ICC) that represents the removable cryptographic authenticator. The command interface for the derived PIV application <strong>SHALL</strong> implement all of the card commands supported by the PIV Card application as described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, which include:</p>
+
+<ul>
+  <li>SELECT</li>
+  <li>GET DATA</li>
+  <li>VERIFY</li>
+  <li>CHANGE REFERENCE DATA</li>
+  <li>RESET RETRY COUNTER</li>
+  <li>GENERAL AUTHENTICATE</li>
+  <li>PUT DATA</li>
+  <li>GENERATE ASYMMETRIC KEY PAIR</li>
+</ul>
+
+<p>The specifications for the token command interface <strong>SHALL</strong> be the same as the specifications for the corresponding card edge commands for a PIV Card as described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, except for the following deviations:</p>
+
+<ul>
+  <li>References to “PIV Card application” are replaced with “derived PIV application.”</li>
+  <li>References to “PIV data objects” are replaced with “derived PIV data objects.”</li>
+  <li>References to “PIV authentication key” are replaced with “derived PIV authentication key.”</li>
+  <li>The derived PIV activation secret <strong>SHALL</strong> satisfy the criteria specified in Appendix B.2.1 of this document rather than Sec. 2.4.3 of <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>.</li>
+  <li>In Appendix A:
+    <ul>
+      <li>References to “PIV Card application administrator” are replaced with “derived PIV application administrator.”</li>
+      <li>References to “card management key” are replaced with “derived PIV token management key.”</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The token platform <strong>SHALL</strong> support a default selected application, which is the application chosen following a cold or warm reset. This default application may be the derived PIV application or another application.</p>
+<h3 id="authentication-of-an-individual" data-section="B">
+  
+  
+    Authentication of an Individual <a href="#authentication-of-an-individual" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>Knowledge of a secret (specifically the derived PIV activation secret) is how an individual can be authenticated to the derived PIV application.</p>
+
+<p>The derived PIV activation secret <strong>SHALL</strong> be between 6 and 8 bytes in length. If the actual length of the derived PIV activation secret is less than 8 bytes, it <strong>SHALL</strong> be padded to 8 bytes with <code class="language-plaintext highlighter-rouge">0xFF</code> when presented to the token command interface. The <code class="language-plaintext highlighter-rouge">0xFF</code> padding bytes <strong>SHALL</strong> be appended to the actual value of the secret. The bytes that comprise the derived PIV activation secret <strong>SHALL</strong> be limited to values <code class="language-plaintext highlighter-rouge">0x30</code> – <code class="language-plaintext highlighter-rouge">0x39</code>, <code class="language-plaintext highlighter-rouge">0x41</code> – <code class="language-plaintext highlighter-rouge">0x5A</code>, and <code class="language-plaintext highlighter-rouge">0x61</code> – <code class="language-plaintext highlighter-rouge">0x7A</code>: the ASCII values for the decimal digits ‘0’ – ‘9’; upper case characters ‘A’ – ‘Z’; and lower case characters ‘a’ – ‘z’. For example,</p>
+
+<ul>
+  <li>Actual derived PIV activation secret: “Part21” or (hexadecimal) <code class="language-plaintext highlighter-rouge">50 61 72 74 32 31</code></li>
+  <li>Padded derived PIV activation secret presented to the card command interface (hexadecimal): <code class="language-plaintext highlighter-rouge">50 61 72 74 32 31 FF FF</code></li>
+</ul>
+
+<p>The derived PIV application <strong>SHALL</strong> enforce the minimum length requirement of 6 bytes for the derived PIV activation secret (i.e., <strong>SHALL</strong> verify that at least the first 6 bytes of the value presented to the card command interface are in the range <code class="language-plaintext highlighter-rouge">0x30</code> – <code class="language-plaintext highlighter-rouge">0x39</code>, <code class="language-plaintext highlighter-rouge">0x41</code> – <code class="language-plaintext highlighter-rouge">0x5A</code>, or <code class="language-plaintext highlighter-rouge">0x61</code> – <code class="language-plaintext highlighter-rouge">0x7A</code>) as well as the other formatting requirements specified in this section.</p>
+
+
+  
+
+
+
+  </div>
+</div>
+<footer role="contentInfo" class="site-footer">
+  <div class="section-container">
+    <div class="section-content">
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function loadSearch() {
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/800-157r1/search.json'
+        });
+    }
+    $(function() {
+      
+      // highlight normative language by adding classes
+      $('strong').filter(':contains("SHALL"), :contains("SHALL NOT"), :contains("SHOULD"), :contains("SHOULD NOT"), :contains("MAY"), :contains("NEED NOT"), :contains("CAN"), :contains("CANNOT"), :contains("CAPITALS")').each(function(i, el) {
+        var $el;
+        $el = $(el);
+        $el.addClass('normative');
+      });
+      // highlight the target
+      $('a:target').parent().addClass('target');
+      $(':target').addClass('target');
+      $(window).on('hashchange', function(e) {
+        $('.target').removeClass('target');
+        $('a:target').parent().addClass('target');
+        $(':target').addClass('target');
+      });
+    });
+</script>
+
+
+</body>
+</html>

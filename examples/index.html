@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="canonical" href="/800-157r1/examples/">
+
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=mml&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script> -->
+    <!-- DAP Analytics -->
+    <script type="text/javascript" id="_fed_an_ua_tag"
+            src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript"></script>
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+	<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/800-157r1/static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTStyle.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTPages.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <title>Example Issuance Processes</title>
+    <meta property="og:title" content="Example Issuance Processes"/>
+    
+
+    
+    <meta name="description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials">
+    <meta property="og:description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials"/>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-left" role="navigation">
+	<ul class="nav navbar-nav">
+      <li id="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onFocus="loadSearch()">
+        <ul id="results-container"></ul>
+      </li>
+      
+        
+        
+        
+        <li class="">
+          
+              <a href="/800-157r1/">Home</a>
+          
+          
+          
+          
+          
+        </li>
+      
+        
+        
+        
+        <li class="active">
+          
+              <a href="/800-157r1/introduction/">SP 800-157r1</a>
+          
+          
+          
+        
+            
+            
+            
+            <ul class="subnav">
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abstract/">Abstract</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/introduction/"><span class="section">1</span>Introduction</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/lifecycle/"><span class="section">2</span>Lifecycle</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/requirements/"><span class="section">3</span>Requirements</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/references/">References</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/keys/"><span class="section">A</span>Keys</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/model/"><span class="section">B</span>Model</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class="active"><a href="/800-157r1/examples/"><span class="section">C</span>Examples</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/pacs/"><span class="section">D</span>Physical Access</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/glossary/"><span class="section">E</span>Glossary</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abbreviations/"><span class="section">F</span>Abbreviations</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/changelog/"><span class="section">G</span>Change Log</a></li>
+                
+              
+              
+
+            
+          
+            </ul>
+          
+          
+          
+        </li>
+      
+      
+      
+  </ul>
+
+</nav>
+
+
+<div class="page-switch">
+
+View this document as: <a href="/800-157r1/sp800-157.html">a single page</a> | <b>multiple pages</b>.
+
+</div>
+
+<div class="container">
+  <div class="row">
+
+
+
+
+
+  
+
+  
+
+<h1 id="s-c" data-section="C">
+  
+  
+    Example Issuance Processes <a href="#s-c" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+    
+
+<p><em>This appendix is informative.</em></p>
+
+<p>The issuance process for a derived PIV credential varies depending on whether it is being issued for use at AAL2 or AAL3. <a href="/800-157r1/lifecycle/#s-2-2">Section 2.2</a> specifies the requirements for initial issuance. This appendix provides example issuance processes that satisfy those requirements at AAL2 and at AAL3. These examples assume the PKI-AUTH authentication mechanism will be used with a valid PIV Card to enable the issuance process.</p>
+<h2 id="s-c-1" data-section="C">
+  
+  
+    Example Issuance of a PKI-Based Derived PIV Credential at AAL3 <a href="#s-c-1" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>An employee requires a derived PIV credential to access a relying party application that requires authentication at AAL3. Their endpoint does not easily accommodate their PIV Card, and the application resides at a different agency that does not support federation, so a PKI-based credential is needed. A request to issue a derived PIV credential is submitted to the agency’s approval authority and is approved.</p>
+
+<p>The employee visits their security office or other issuing authority. If the issuance of a derived PIV credential has been approved, they are provided with a USB authenticator capable of supporting the derived PIV application and meeting AAL3 requirements. After authenticating with their PIV Card using the PKI-AUTH authentication mechanism, the USB authenticator is provisioned, which involves the generation of a key pair for the derived PIV authentication certificate within the device’s cryptographic module and export of the public key to the IDMS, which generates the certificate and loads it onto the authenticator. The employee is also prompted to establish an activation secret for the credential. The issuer enters information about the new derived PIV credential into the subscriber’s PIV identity account. The employee is notified of the binding of the new derived PIV credential by email or postal notification to their address in the PIV identity account.</p>
+
+<p>Additional data elements described in <a href="/800-157r1/model/#s-b-1-2">Appendix B.1.2</a> may also be provisioned on the device.</p>
+<h2 id="s-c-2" data-section="C">
+  
+  
+    Example Issuance of a PKI-Based Derived PIV Credential at AAL2 <a href="#s-c-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>An employee requires a mobile device for work. The mobile device is ordered, and a request to issue a derived PIV credential is submitted to the agency’s approval authority.</p>
+
+<p>Following receipt of the device and approval, the employee starts the binding process remotely — such as from their home — by visiting a derived PIV credential website operated by or on behalf of their PIV Card’s home agency IDMS. The website requires TLS client authentication using the PKI-AUTH authentication method with the employee’s PIV Card. The employee performs this step from a desktop computer since they cannot use their PIV Card on a mobile device. Having authenticated the employee, the server verifies PIV credential eligibility in the employee’s PIV identity account. Once the employee has successfully authenticated to the server, the issuer generates and displays a binding secret to the employee.</p>
+
+<p>The employee then runs a provisioning application on the mobile device. The application asks the employee to identify themselves and enter the binding secret previously provided from the desktop website to create an activation secret, which will subsequently be used to authenticate to the cryptographic module. The application generates a key pair within the device’s cryptographic module and submits the binding secret and newly generated public key to the PIV issuer as part of a certificate request. The PIV issuer authenticates the employee by verifying that the certificate request’s binding secret matches the one it previously issued and forwards the public key to the CA, which signs and issues the derived PIV credential (i.e., the derived PIV authentication certificate). The provisioning application loads the derived PIV authentication certificate on the mobile device. The PIV Card issuer enters information about the new derived PIV credential into the subscriber’s PIV identity account. The cardholder is notified of the binding of the new derived PIV credential by email or postal notification to their address in the PIV identity account.</p>
+
+<p>Normative requirements for this process are given in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 4.1.2.2 and in <a href="/800-157r1/lifecycle/#s-2-2">Sec. 2.2</a> of this document.</p>
+<h2 id="s-c-3" data-section="C">
+  
+  
+    Example Binding of a Non-PKI-Based Derived PIV Credential at AAL3 <a href="#s-c-3" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>An employee requires a derived PIV credential to access a relying party using one or more endpoints that do not accommodate the direct use of a PIV Card. The employee requests a non-PKI-based authenticator capable of authentication at AAL3 and approval to use that authenticator as a derived PIV credential. The agency’s approval authority approves the request.</p>
+
+<p>After receiving the approval and authenticator, the employee starts the binding process by authenticating with their PIV Card using PKI-AUTH at a derived PIV credential website operated by or on behalf of the employee’s home agency IdMS. The website requires TLS client authentication with the PKI-AUTH authentication method using the employee’s PIV Card. Having authenticated the employee, the server verifies eligibility to possess a PIV Card. The employee then inserts (connects) the authenticator to be used as a derived PIV credential and registers (binds) that credential, including establishing a second authentication factor (activation secret or biometric characteristic) if that has not already been done. The website determines whether the authenticator meets AAL3 requirements. Upon successful registration, the home agency’s endpoint stores the subscriber’s key and appropriate metadata for non-PKI-based PIV authentication. The PIV Card issuer enters information about the new derived PIV credential into the subscriber’s PIV identity account. The employee is notified of the binding of the new derived PIV credential by email or postal notification to their address in the PIV identity account.</p>
+
+<p>If the authenticator uses verifier name binding as described in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 3.2.5.2, the website used to register the authenticator has to share the same domain name as will be used by the home agency IdMS to authenticate the subscriber so that the same keys are used for registration and authentication.</p>
+<h2 id="s-c-4" data-section="C">
+  
+  
+    Example Binding of a Non-PKI-Based Derived PIV Credential at AAL2 <a href="#s-c-4" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The binding of a non-PKI-based derived PIV credential at AAL2 is identical to that at AAL3, except that the authenticator needs only to meet the requirements of AAL2.</p>
+<h2 id="example-binding-of-pacs-credential" data-section="C">
+  
+  
+    Example Binding of PACS Credential <a href="#example-binding-of-pacs-credential" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>To enable a derived PIV credential to be used for physical access as described in <a href="/800-157r1/pacs/#s-d">Appendix D</a>, the applicant first authenticates using their PIV Card and the PKI-AUTH authentication method. Having authenticated the employee, the server verifies PIV credential eligibility in the applicant’s PIV identity account. The issuer generates a new CHUID data object, derived card authentication key, and derived card authentication certificate. If the SM-AUTH authentication method is supported, a key pair is generated. The issuer creates a corresponding derived card verifiable certificate and secure messaging certificate signer object. The issuer transfers the created objects to the derived PIV credential module using a TLS or similar authenticated protected channel. Because the PACS credential is a single authentication factor, it is not necessary to establish an activation factor.</p>
+
+<p>The PIV Card issuer enters information about the new derived PIV credential into the subscriber’s PIV identity account. The cardholder is notified of the binding of the new derived PIV credential.</p>
+
+
+  
+
+
+
+  </div>
+</div>
+<footer role="contentInfo" class="site-footer">
+  <div class="section-container">
+    <div class="section-content">
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function loadSearch() {
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/800-157r1/search.json'
+        });
+    }
+    $(function() {
+      
+      // highlight normative language by adding classes
+      $('strong').filter(':contains("SHALL"), :contains("SHALL NOT"), :contains("SHOULD"), :contains("SHOULD NOT"), :contains("MAY"), :contains("NEED NOT"), :contains("CAN"), :contains("CANNOT"), :contains("CAPITALS")').each(function(i, el) {
+        var $el;
+        $el = $(el);
+        $el.addClass('normative');
+      });
+      // highlight the target
+      $('a:target').parent().addClass('target');
+      $(':target').addClass('target');
+      $(window).on('hashchange', function(e) {
+        $('.target').removeClass('target');
+        $('a:target').parent().addClass('target');
+        $(':target').addClass('target');
+      });
+    });
+</script>
+
+
+</body>
+</html>

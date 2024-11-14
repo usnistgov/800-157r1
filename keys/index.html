@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="canonical" href="/800-157r1/keys/">
+
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=mml&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script> -->
+    <!-- DAP Analytics -->
+    <script type="text/javascript" id="_fed_an_ua_tag"
+            src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript"></script>
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+	<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/800-157r1/static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTStyle.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTPages.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <title>Digital Signature and Key Management Keys</title>
+    <meta property="og:title" content="Digital Signature and Key Management Keys"/>
+    
+
+    
+    <meta name="description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials">
+    <meta property="og:description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials"/>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-left" role="navigation">
+	<ul class="nav navbar-nav">
+      <li id="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onFocus="loadSearch()">
+        <ul id="results-container"></ul>
+      </li>
+      
+        
+        
+        
+        <li class="">
+          
+              <a href="/800-157r1/">Home</a>
+          
+          
+          
+          
+          
+        </li>
+      
+        
+        
+        
+        <li class="active">
+          
+              <a href="/800-157r1/introduction/">SP 800-157r1</a>
+          
+          
+          
+        
+            
+            
+            
+            <ul class="subnav">
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abstract/">Abstract</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/introduction/"><span class="section">1</span>Introduction</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/lifecycle/"><span class="section">2</span>Lifecycle</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/requirements/"><span class="section">3</span>Requirements</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/references/">References</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class="active"><a href="/800-157r1/keys/"><span class="section">A</span>Keys</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/model/"><span class="section">B</span>Model</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/examples/"><span class="section">C</span>Examples</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/pacs/"><span class="section">D</span>Physical Access</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/glossary/"><span class="section">E</span>Glossary</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abbreviations/"><span class="section">F</span>Abbreviations</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/changelog/"><span class="section">G</span>Change Log</a></li>
+                
+              
+              
+
+            
+          
+            </ul>
+          
+          
+          
+        </li>
+      
+      
+      
+  </ul>
+
+</nav>
+
+
+<div class="page-switch">
+
+View this document as: <a href="/800-157r1/sp800-157.html">a single page</a> | <b>multiple pages</b>.
+
+</div>
+
+<div class="container">
+  <div class="row">
+
+
+
+
+
+  
+
+  
+
+<h1 id="s-a" data-section="A">
+  
+  
+    Digital Signature and Key Management Keys <a href="#s-a" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+    
+
+<p><em>This appendix is informative.</em></p>
+
+<p>In addition to the PIV authentication keys, <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a> also requires each PIV Card to have a digital signature key and a key management key unless the cardholder does not have a government-issued email account at the time of credential issuance. A subscriber who has been issued a derived PIV credential may also need a digital signature and key management key.</p>
+
+<p>To decrypt data that was previously encrypted using one of the older key management public keys, it would be necessary to store a copy of the PIV Card’s key management private key and certificate in the keystore that hosts the derived PIV credential. Neither <a href="/800-157r1/references/#ref-FIPS201">[FIPS201]</a> nor <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a> precludes a key management private key from being used on more than one device (e.g., the PIV Card and a derived PIV credential keystore) as long as all of the requirements of the policy under which the key management certificate was issued are satisfied. This means that to use a copy of a key management private key in a <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 software cryptographic module, the corresponding certificate would have to be issued under a certificate policy, such as <code class="language-plaintext highlighter-rouge">id-fpki-common-policy</code>, that does not require the use of a <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 2 hardware cryptographic module. This should be considered when issuing the key management certificate placed on the PIV Card. Key recovery mechanisms are encouraged for key management keys used on derived PIV credential keystores.</p>
+
+<p>As the digital signature key on a PIV Card cannot be copied, a new digital signature private key will need to be generated and a corresponding certificate will need to be issued for the derived PIV credential keystore. The issuance of this private key and certificate is independent of the issuance of the PIV Card. As the certificate policies associated with digital signature certificates in <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a> (<code class="language-plaintext highlighter-rouge">id-fpki-common-policy</code>, <code class="language-plaintext highlighter-rouge">id-fpki-common-hardware</code>, and <code class="language-plaintext highlighter-rouge">id-fpki-common-High</code>) are not limited to use with PIV Cards, a digital signature certificate for a derived PIV credential keystore may be issued under one of these policies as long as all of the policy requirements are satisfied.</p>
+
+
+  
+
+
+
+  </div>
+</div>
+<footer role="contentInfo" class="site-footer">
+  <div class="section-container">
+    <div class="section-content">
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function loadSearch() {
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/800-157r1/search.json'
+        });
+    }
+    $(function() {
+      
+      // highlight normative language by adding classes
+      $('strong').filter(':contains("SHALL"), :contains("SHALL NOT"), :contains("SHOULD"), :contains("SHOULD NOT"), :contains("MAY"), :contains("NEED NOT"), :contains("CAN"), :contains("CANNOT"), :contains("CAPITALS")').each(function(i, el) {
+        var $el;
+        $el = $(el);
+        $el.addClass('normative');
+      });
+      // highlight the target
+      $('a:target').parent().addClass('target');
+      $(':target').addClass('target');
+      $(window).on('hashchange', function(e) {
+        $('.target').removeClass('target');
+        $('a:target').parent().addClass('target');
+        $(':target').addClass('target');
+      });
+    });
+</script>
+
+
+</body>
+</html>

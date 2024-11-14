@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+    <link rel="canonical" href="/800-157r1/pacs/">
+
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript" id="_fed_an_js_tag" src="http://www.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=mml&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script> -->
+    <!-- DAP Analytics -->
+    <script type="text/javascript" id="_fed_an_ua_tag"
+            src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript"></script>
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+	<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/800-157r1/static/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTStyle.css">
+    <link rel="stylesheet" href="/800-157r1/static/css/NISTPages.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <title>Physical Access</title>
+    <meta property="og:title" content="Physical Access"/>
+    
+
+    
+    <meta name="description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials">
+    <meta property="og:description" content="NIST Special Publication 800-157r1 Guidelines for Derived Personal Identity Verification (PIV) Credentials"/>
+    
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-left" role="navigation">
+	<ul class="nav navbar-nav">
+      <li id="search-box">
+        <input type="text" id="search-input" placeholder="Search..." onFocus="loadSearch()">
+        <ul id="results-container"></ul>
+      </li>
+      
+        
+        
+        
+        <li class="">
+          
+              <a href="/800-157r1/">Home</a>
+          
+          
+          
+          
+          
+        </li>
+      
+        
+        
+        
+        <li class="active">
+          
+              <a href="/800-157r1/introduction/">SP 800-157r1</a>
+          
+          
+          
+        
+            
+            
+            
+            <ul class="subnav">
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abstract/">Abstract</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/introduction/"><span class="section">1</span>Introduction</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/lifecycle/"><span class="section">2</span>Lifecycle</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/requirements/"><span class="section">3</span>Requirements</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/references/">References</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/keys/"><span class="section">A</span>Keys</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/model/"><span class="section">B</span>Model</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/examples/"><span class="section">C</span>Examples</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class="active"><a href="/800-157r1/pacs/"><span class="section">D</span>Physical Access</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/glossary/"><span class="section">E</span>Glossary</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/abbreviations/"><span class="section">F</span>Abbreviations</a></li>
+                
+              
+              
+
+            
+              
+              
+              
+                
+                
+                
+                
+                
+                    <li class=""><a href="/800-157r1/changelog/"><span class="section">G</span>Change Log</a></li>
+                
+              
+              
+
+            
+          
+            </ul>
+          
+          
+          
+        </li>
+      
+      
+      
+  </ul>
+
+</nav>
+
+
+<div class="page-switch">
+
+View this document as: <a href="/800-157r1/sp800-157.html">a single page</a> | <b>multiple pages</b>.
+
+</div>
+
+<div class="container">
+  <div class="row">
+
+
+
+
+
+  
+
+  
+
+<h1 id="s-d" data-section="D">
+  
+  
+    Physical Access <a href="#s-d" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h1>
+    
+
+<p><em>This appendix is normative.</em></p>
+
+<p>Credentials on PIV cards are commonly used to identify and authenticate individuals accessing government facilities. Agencies <strong>MAY</strong> issue derived PIV credentials for use with physical access control systems. This appendix provides data model and interface requirements for derived PIV applications for physical access. To facilitate compatibility with PIV readers, these requirements reference the requirements for the PIV card and PIV card application specified in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>.</p>
+
+<p>Authentication to physical access control systems (PACS) using derived PIV credentials <strong>MAY</strong> use the PKI-CAK or SM-AUTH authentication mechanisms described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a> and <a href="/800-157r1/references/#ref-SP-800-116">[SP800-116]</a>. Derived PIV credential modules that support PACS <strong>SHALL</strong> support the PKI-CAK authentication mechanism. Physical access <strong>SHALL</strong> be supported by contactless readers that conform to <a href="/800-157r1/references/#ref-ISO14443">[ISO14443]</a> for the card-to-reader interface and conform to <a href="/800-157r1/references/#ref-ISO7816">[ISO7816]</a> for data transmitted over the <a href="/800-157r1/references/#ref-ISO14443">[ISO14443]</a> link.  If readers are connected to general-purpose desktop computing systems, they <strong>SHALL</strong> conform to <a href="/800-157r1/references/#ref-PCSC">[PCSC]</a> for the reader-to-host system interface and the requirements specified in <a href="/800-157r1/references/#ref-SP-800-96">[SP800-96]</a>. This standard does not specify the reader-to-host system interface in systems where the readers are not connected to general-purpose desktop computing systems.</p>
+
+<p>Since the PKI-CAK and SM-AUTH authentication mechanisms are single-factor, there is no need to establish an activation factor for these physical access methods.</p>
+
+<p>Issuance of derived PIV credentials that support PACS <strong>SHALL</strong> be done in accordance with the post-enrollment binding described in <a href="/800-157r1/lifecycle/#s-2-2">Sec. 2.2</a> and the PKI-based PIV credential issuance procedures described in <a href="/800-157r1/lifecycle/#s-2-2-1">Sec. 2.2.1</a>. Issuance of derived PIV credentials in support of PACS without a PIV card <strong>SHALL</strong> follow <a href="/800-157r1/lifecycle/#s-2-2-3">Sec. 2.2.3</a>.</p>
+<h2 id="pacs-derived-piv-application-data-model-and-representation" data-section="D">
+  
+  
+    PACS Derived PIV Application Data Model and Representation <a href="#pacs-derived-piv-application-data-model-and-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>The data model and representation requirements for the derived PIV application are based on the requirements for the PIV Card application, as described in <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. Test requirements and test assertions for testing the derived PIV application and associated derived PIV data objects implemented on removable hardware tokens are specified in <a href="/800-157r1/references/#ref-SP-800-166">[SP800-166]</a>, <em>Derived PIV Application and Data Model Test Guidelines</em>. The specifications for the mandatory and optional data objects listed below are the same as the specifications for the corresponding data objects on a PIV Card application, as described in <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>, with exceptions as noted.</p>
+<h3 id="derived-piv-application-identifier" data-section="D">
+  
+  
+    Derived PIV Application Identifier <a href="#derived-piv-application-identifier" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>Either the PIV card application identifier (AID) defined in Sec. 2.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> or the derived PIV application AID, defined in <a href="/800-157r1/model/#s-b">Appendix B</a>, <strong>SHALL</strong> be used. To maximize compatibility with existing PACS readers, the AID of the PIV card application <strong>SHOULD</strong> be used unless the use of the derived PIV AID for logical access makes this infeasible.</p>
+
+<p>For reference, the AID of the PIV card application is (in hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08      00 00 10 00       01 00
+</code></pre></div></div>
+
+<p>The AID of the derived PIV application is (in hexadecimal):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A0 00 00 03 08      00 00 20 00       01 00
+</code></pre></div></div>
+
+<p>The desired application can be selected by providing the full AID listed above or a truncated version that omits the last two bytes ‘01 00’.</p>
+<h3 id="s-d-1-2" data-section="D">
+  
+  
+    PACS Derived PIV Application Data Model Elements <a href="#s-d-1-2" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The derived PIV application <strong>SHALL</strong> contain the following data objects when used for PACS:</p>
+
+<dl>
+  <dt>Derived CHUID Data Object</dt>
+  <dd>The read access control rule for the derived CHUID data object is as described for the CHUID data object specified in Sec. 3.1.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> except that it <strong>SHALL</strong> be accessible only via the contactless interface. The FASC-N and card UUID contained within the derived CHUID data object <strong>SHALL</strong> be distinct from the corresponding values on the PIV card and any other derived PIV credential module.<sup id="fnref:distinct" role="doc-noteref"><a href="#fn:distinct" class="footnote">1</a></sup> This data object is required for access control systems that use the FASC-N or the card UUID in the CHUID to look up authorization information rapidly. The derived CHUID <strong>SHALL NOT</strong> be used for authentication since that authentication method has been withdrawn. If the optional cardholder UUID is included in the derived CHUID data object, it <strong>SHALL</strong> contain the same value as the cardholder’s PIV card.</dd>
+</dl>
+
+<p>The FASC-N, card UUID, expiration date, and, if present, cardholder UUID <strong>SHALL NOT</strong> be modified post-issuance.</p>
+
+<p>The expiration date included in the derived CHUID data object <strong>SHALL</strong> be the same as the expiration date of the derived card authentication certificate. It <strong>SHALL</strong> be no later than the expiration date of the content signing certificate. There is no requirement to align the expiration date included in the derived CHUID data object with the expiration date of the CHUID data object on the cardholder’s PIV Card or with other certificates on the derived PIV credential.</p>
+
+<dl>
+  <dt>X.509 Certificate for Derived Card Authentication</dt>
+  <dd>This data object is required for the PKI-CAK authentication mechanism. The read access control rule for the X.509 certificate for derived card authentication and the PKI cryptographic function access rule for the corresponding private key are as described for the X.509 certificate for card authentication in Sec. 3.1.4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> with the exception that they <strong>SHALL</strong> only be accessible via the contactless interface. The card UUID value <strong>SHALL</strong> be the same as the one in the derived CHUID data object.</dd>
+</dl>
+
+<p>The derived PIV application <strong>MAY</strong> contain the following data objects:</p>
+
+<dl>
+  <dt>Derived PIV Secure Messaging Key and Derived Card Verifiable Certificate</dt>
+  <dd>The PKI cryptographic function access rule for the derived PIV secure messaging key and the read access control rule for the derived card verifiable certificate (DCVC) are as described for the secure messaging key specified in Sec. 5.1.2 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> and Sec. 4.1.5 of <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, respectively, except that they <strong>SHALL</strong> only be accessible via the contactless interface. These data objects are required for the SM-AUTH authentication mechanism. The card UUID in the derived card verifiable certificate <strong>SHALL</strong> be the same as that in the derived CHUID data object.</dd>
+  <dt>Secure Messaging Certificate Signer Object</dt>
+  <dd>The read access control rule for the secure messaging certificate signer object is as described in Sec. 3.3.7 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. This data object is required for the SM-AUTH authentication mechanism.</dd>
+</dl>
+<h4 id="pacs-derived-piv-application-data-object-containers-and-associated-access-rules" data-section="D">
+  
+  
+    PACS Derived PIV Application Data Object Containers and Associated Access Rules <a href="#pacs-derived-piv-application-data-object-containers-and-associated-access-rules" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<p>Section 3.5 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> provides the container IDs and access rules for the PACS data objects for a derived PIV application with the mappings in <a href="/800-157r1/pacs/#table-3">Table 3</a>.</p>
+
+<p latex-ignore="true"><a href="/800-157r1/pacs/#table-3" name="table-3">Table 3. Mapping of PACS data objects</a></p>
+
+<table latex-table="3" latex-caption="Mapping of Data Objects">
+  <thead>
+    <tr>
+      <th>Derived PIV Application Data Object</th>
+      <th>PIV Card Application Data Object</th>
+      <th>Specification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X.509 Certificate for Derived Card Authentication</td>
+      <td>X.509 Certificate for Card Authentication</td>
+      <td><a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> Appendix A Table 18</td>
+    </tr>
+    <tr>
+      <td>Derived CHUID Data Object</td>
+      <td>CHUID Data Object</td>
+      <td><a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> Appendix A Table 10</td>
+    </tr>
+    <tr>
+      <td>Derived Card Verifiable Certificate</td>
+      <td>Card Verifiable Certificate</td>
+      <td><a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a> Sec. 4.1.5</td>
+    </tr>
+    <tr>
+      <td>Secure Messaging Certificate Signer</td>
+      <td>Secure Messaging Certificate Signer</td>
+      <td><a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> Appendix A Table 43</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The detailed data model specifications for each of the PACS data objects are the same as the specifications for the corresponding data objects of the PIV Card application cited in <a href="/800-157r1/pacs/#table-3">Table 3</a> above with the exception that, as specified in <a href="#s-d-1-2">Sec. D.1.2</a>, they are accessible only over the contactless interface, except for the Secure Messaging Certificate Signer.</p>
+
+<p>Derived card authentication certificates <strong>SHALL</strong> be issued under the <code class="language-plaintext highlighter-rouge">id-fpki-common-devices</code> or the <code class="language-plaintext highlighter-rouge">id-fpki-common-devicesHardware</code> policy of <a href="/800-157r1/references/#ref-COMMON">[COMMON]</a>. The certificate <strong>SHALL</strong> also include an extended key usage (extKeyUsage) extension asserting <code class="language-plaintext highlighter-rouge">id-PIV-cardAuth</code>. Derived card authentication certificates <strong>SHALL</strong> comply with the <em>Alternative PACS Authenticator Certificate</em> profile in <a href="/800-157r1/references/#ref-PROF">[PROF]</a>.</p>
+
+<p>The expiration date of a derived card authentication certificate is based on the issuer’s certificate policy and the certificate policy specified above. There is no requirement to align the expiration date of a derived card authentication certificate with the expiration date of the card authentication certificate or the expiration of the PIV Card. This allows a derived PIV credential to continue to act as an active credential while the cardholder’s PIV Card is being renewed.</p>
+
+<p>For derived card authentication certificates issued under <code class="language-plaintext highlighter-rouge">id-fpki-common-devices</code>, the derived card authentication key pair <strong>SHALL</strong> be generated within a cryptographic module that has been validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher. If the key pair is generated outside of the authenticator itself, the private key <strong>SHALL</strong> be transferred via an authenticated protected channel as defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>, and the authenticator <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.2.2, including being validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher.</p>
+
+<p>For derived card authentication certificates issued under <code class="language-plaintext highlighter-rouge">id-fpki-common-devicesHardware</code>, the derived card authentication key pair <strong>SHALL</strong> be generated within a cryptographic module that has been validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 2 or higher. If the key pair is generated outside of the authenticator itself, the private key <strong>SHALL</strong> be transferred via an authenticated protected channel as defined in <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a>, and the authenticator <strong>SHALL</strong> meet the requirements of <a href="/800-157r1/references/#ref-SP-800-63B">[SP800-63B]</a> Sec. 2.3.2, including being validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 2 or higher.</p>
+
+<p>If present, the derived PIV secure messaging key pair <strong>SHALL</strong> be generated on the authenticator itself. Its private key <strong>SHALL NOT</strong> be exportable. The authenticator <strong>SHALL</strong> be validated to <a href="/800-157r1/references/#ref-FIPS140">[FIPS140]</a> Level 1 or higher.</p>
+
+<p>The issuer <strong>SHALL</strong> generate the derived PIV card verifiable certificate, the derived CHUID data object, and the secure messaging certificate signer object (if required) and transfer them to the authenticator.</p>
+<h3 id="derived-piv-pacs-application-data-objects-representation" data-section="D">
+  
+  
+    Derived PIV PACS Application Data Objects Representation <a href="#derived-piv-pacs-application-data-objects-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The ASN.1 object identifiers (OID) and <em>basic encoding rules – tag length value</em> (BER-TLV) tags for the PACS data objects within the derived PIV application are the same as for the corresponding data objects of the PIV Card application (mapped per <a href="/800-157r1/pacs/#table-3">Table 3</a>), as described in Sec. 4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-application-pacs-data-types-and-representation" data-section="D">
+  
+  
+    Derived PIV Application PACS Data Types and Representation <a href="#derived-piv-application-pacs-data-types-and-representation" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>This section describes the data types used in the derived PIV application PACS command interface.</p>
+<h4 id="derived-piv-application-pacs-key-references-and-security-conditions" data-section="D">
+  
+  
+    Derived PIV Application PACS Key References and Security Conditions <a href="#derived-piv-application-pacs-key-references-and-security-conditions" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<p>Key references are assigned to keys and secrets of the derived PIV application. Table 8 of <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a> and Table 4 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> define the key reference values that <strong>SHALL</strong> be used on the derived PIV application interfaces with the mappings in <a href="/800-157r1/pacs/#table-4">Table 4</a>.</p>
+
+<p latex-ignore="true"><a href="D-pacs.md#table-4" name="table-4">Table 4. Mapping of PACS key types</a></p>
+
+<table latex-table="4" latex-caption="Mapping of PACS Key Types">
+  <thead>
+    <tr>
+      <th>Derived PIV PACS Key Type</th>
+      <th>PIV Key Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Derived Card Authentication Key</td>
+      <td>Card Authentication Key</td>
+    </tr>
+    <tr>
+      <td>Derived PIV Secure Messaging Key</td>
+      <td>PIV Secure Messaging Key</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The key reference specifications in Sec. 5.1 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a> apply to the corresponding keys included in the derived PIV application (mapped per <a href="/800-157r1/pacs/#table-4">Table 4</a>) except that references to “PIV Card application” are replaced with “derived PIV application.”</p>
+<h4 id="derived-piv-application-pacs-cryptographic-algorithm-and-mechanism-identifiers" data-section="D">
+  
+  
+    Derived PIV Application PACS Cryptographic Algorithm and Mechanism Identifiers <a href="#derived-piv-application-pacs-cryptographic-algorithm-and-mechanism-identifiers" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<p>The algorithm identifiers for the cryptographic algorithms that <strong>MAY</strong> be recognized for PACS use on the derived PIV application interfaces are the asymmetric identifiers specified in Table 9 and Table 10 of <a href="/800-157r1/references/#ref-SP-800-78">[SP800-78]</a>. The cryptographic mechanism identifiers that <strong>MAY</strong> be recognized on the derived PIV application interfaces are those specified in Table 5 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h4 id="derived-piv-application-status-words" data-section="D">
+  
+  
+    Derived PIV Application Status Words <a href="#derived-piv-application-status-words" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h4>
+    
+
+<p>The status words that <strong>MAY</strong> be returned for PACS use on the derived PIV application command interface are as specified in Sec. 5.6 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>.</p>
+<h3 id="derived-piv-pacs-authentication-mechanisms" data-section="D">
+  
+  
+    Derived PIV PACS Authentication Mechanisms <a href="#derived-piv-pacs-authentication-mechanisms" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The derived PIV application supports the following validation steps for PACS use:</p>
+
+<ul>
+  <li>
+    <p>Credential validation (CredV) is established by verifying the certificates retrieved from the derived PIV application and checking the validity and revocation status of these certificates.</p>
+  </li>
+  <li>
+    <p>As with the PKI-CAK and SM-AUTH authentication mechanisms for the PIV card, derived PIV holder validation (HolderV) for PACS is only established by possession of the derived PIV credential (i.e., these are single-factor authentication mechanisms).</p>
+  </li>
+</ul>
+
+<p>Derived PIV applications that support PACS <strong>SHALL</strong> support PKI-CAK, a cryptographic challenge and response authentication protocol that uses the derived card authentication key as described in Appendix B.1.3 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. Derived PIV applications <strong>MAY</strong> also support SM-AUTH — a key establishment protocol that uses the derived PIV secure messaging key, as described in Appendix B.1.7 of <a href="/800-157r1/references/#ref-SP-800-73pt1">[SP800-73pt1]</a>. The following translations apply to the use of these protocols by a derived PIV credential:</p>
+
+<ul>
+  <li>References to “PIV application” are replaced with “derived PIV application.”</li>
+  <li>References to “Card auth certificate” are replaced with “derived card authentication certificate.”</li>
+  <li>References to “SM parameters” are replaced with “derived SM parameters”</li>
+  <li>References to “PIV Card app ID” are replaced with “derived PIV application ID.”</li>
+</ul>
+<h2 id="derived-piv-application-token-command-interface" data-section="D">
+  
+  
+    Derived PIV Application Token Command Interface <a href="#derived-piv-application-token-command-interface" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>This appendix contains the technical specifications for the command interface to the derived PIV application surfaced by the wireless interface to the derived PIV credential for PACS. The command interface for the derived PIV application <strong>SHALL</strong> implement a subset of the card commands supported by the PIV Card application, as described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, which include:</p>
+
+<ul>
+  <li>SELECT</li>
+  <li>GET DATA</li>
+  <li>GENERAL AUTHENTICATE</li>
+  <li>PUT DATA</li>
+  <li>GENERATE ASYMMETRIC KEY PAIR</li>
+</ul>
+
+<p>The specifications for the token command interface <strong>SHALL</strong> be the same as the specifications for the corresponding card edge commands for a PIV Card, as described in <a href="/800-157r1/references/#ref-SP-800-73pt2">[SP800-73pt2]</a>, except for the following deviations:</p>
+
+<ul>
+  <li>References to “PIV Card application” are replaced with “derived PIV application.”</li>
+  <li>References to “PIV data objects” are replaced with “derived PIV data objects.”</li>
+  <li>References to “card authentication key” are replaced with “derived card authentication key.”</li>
+  <li>In Appendix A:
+    <ul>
+      <li>References to “PIV Card application administrator” are replaced with “derived PIV application administrator.”</li>
+      <li>References to “card management key” are replaced with “derived PIV token management key.”</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The token platform <strong>SHALL</strong> support a default selected application, which is the application chosen immediately following a cold or warm reset. This default application <strong>MAY</strong> be the derived PIV application or another application.</p>
+<h3 id="authentication-of-an-individual-for-pacs" data-section="D">
+  
+  
+    Authentication of an Individual for PACS <a href="#authentication-of-an-individual-for-pacs" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h3>
+    
+
+<p>The two authentication mechanisms for PACS are PKI-CAK and SM-AUTH, which rely only on possession of the derived PIV credential for holder validation (HolderV). Therefore, an activation secret is not used for enhanced holder validation.</p>
+<h2 id="invalidation-of-pacs-derived-piv" data-section="D">
+  
+  
+    Invalidation of PACS Derived PIV <a href="#invalidation-of-pacs-derived-piv" class="header-link"><i class="fa fa-link"></i></a>
+  
+  
+</h2>
+    
+
+<p>A derived PIV credential that is used for physical access <strong>SHALL</strong> be invalidated when the associated PIV identity account is terminated or when the PACS credential or the device on which it resides has been lost or compromised. The IdMS <strong>SHALL</strong> revoke the card authentication certificate associated with the lost or compromised device or all such certificates associated with the terminated PIV identity account. The home agency IdMS <strong>SHOULD</strong> direct all physical access control systems known to use the credential to remove it from their access control lists.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:distinct" role="doc-endnote">
+      <p>This will generally require multiple entries for the cardholder on the access control list — one for each of their derived PIV credential modules and the PIV card. <a href="#fnref:distinct" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+  
+
+
+
+  </div>
+</div>
+<footer role="contentInfo" class="site-footer">
+  <div class="section-container">
+    <div class="section-content">
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function loadSearch() {
+        var sjs = SimpleJekyllSearch({
+          searchInput: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/800-157r1/search.json'
+        });
+    }
+    $(function() {
+      
+      // highlight normative language by adding classes
+      $('strong').filter(':contains("SHALL"), :contains("SHALL NOT"), :contains("SHOULD"), :contains("SHOULD NOT"), :contains("MAY"), :contains("NEED NOT"), :contains("CAN"), :contains("CANNOT"), :contains("CAPITALS")').each(function(i, el) {
+        var $el;
+        $el = $(el);
+        $el.addClass('normative');
+      });
+      // highlight the target
+      $('a:target').parent().addClass('target');
+      $(':target').addClass('target');
+      $(window).on('hashchange', function(e) {
+        $('.target').removeClass('target');
+        $('a:target').parent().addClass('target');
+        $(':target').addClass('target');
+      });
+    });
+</script>
+
+
+</body>
+</html>
